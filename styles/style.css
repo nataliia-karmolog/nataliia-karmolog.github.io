@@ -428,7 +428,7 @@ a {
 }
 .hero-img::before {
   content: "";
-  background-image: url("../assets/img/2.jpg");
+  background-image: url("../assets/img/2.webp");
   background-size: cover;
   position: absolute;
   top: -180px;
@@ -440,7 +440,7 @@ a {
 @media screen and (max-width: 1367px) {
   .hero-img::before {
     content: "";
-    background-image: url("../assets/img/2.jpg");
+    background-image: url("../assets/img/2.webp");
     background-size: cover;
     position: absolute;
     top: -20px;
@@ -490,7 +490,7 @@ a {
 }
 .about-container .about-wrap .about-wrap-img::before {
   content: "";
-  background-image: url("../assets/img/4.jpg");
+  background-image: url("../assets/img/4.webp");
   background-size: cover;
   position: absolute;
   top: -100px;
@@ -746,7 +746,7 @@ a {
 }
 .method-container .method-wrap .method-wrap-img::before {
   content: "";
-  background-image: url("../assets/img/5.jpg");
+  background-image: url("../assets/img/5.webp");
   background-size: cover;
   position: absolute;
   top: -330px;
@@ -964,7 +964,7 @@ a {
   background-color: #EAE4DD;
 }
 .services-container #card-1-img::before {
-  background-image: url("../assets/img/62.jpg");
+  background-image: url("../assets/img/62.webp");
   top: -50px;
   right: -65px;
   bottom: -50px;
@@ -978,7 +978,7 @@ a {
           flex-direction: row-reverse;
 }
 .services-container #card-2-img::before {
-  background-image: url("../assets/img/7.jpg");
+  background-image: url("../assets/img/7.webp");
   top: -50px;
   right: 0px;
   bottom: -50px;
@@ -1466,7 +1466,7 @@ a {
 }
 .numerology-school .numerology-school-wrapper .numerology-school-wrap-img::before {
   content: "";
-  background-image: url("../assets/img/9.jpg");
+  background-image: url("../assets/img/9.webp");
   background-size: cover;
   position: absolute;
   top: -300px;
@@ -1571,7 +1571,7 @@ a {
 }
 .study-program .container .study-program-img::before {
   content: "";
-  background-image: url("../assets/img/8.jpg");
+  background-image: url("../assets/img/8.webp");
   background-size: cover;
   position: absolute;
   top: -230px;
