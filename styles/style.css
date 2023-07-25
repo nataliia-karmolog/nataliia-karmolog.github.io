@@ -22,6 +22,11 @@ body {
   color: #331B07;
   font-size: 1vw;
 }
+@media (max-width: 1366px) {
+  body {
+    overflow-x: hidden;
+  }
+}
 
 h1,
 h2,
@@ -125,6 +130,11 @@ a {
 }
 .hero-text-wrapper .header .nav-ul a:hover {
   color: #B49378;
+}
+@media (max-width: 1367px) {
+  .hero-text-wrapper .header .nav-ul a {
+    font-size: 12px;
+  }
 }
 .hero-text-wrapper .header .hamburger {
   display: none;
@@ -255,6 +265,15 @@ a {
   width: 73%;
   padding-left: 22%;
 }
+@media (max-width: 1367px) {
+  .hero-text-wrapper .hero-text h1 {
+    font-size: 4.7em;
+    line-height: 1.25em;
+    padding-left: 2.5%;
+    margin-top: 10.5%;
+    margin-bottom: 20px;
+  }
+}
 @media (max-width: 1028px) {
   .hero-text-wrapper .hero-text h1 {
     font-size: 6.5em;
@@ -377,6 +396,21 @@ a {
 .hero-text-wrapper .hero-circle .coloring {
   -webkit-animation: coloring 18s linear infinite;
           animation: coloring 18s linear infinite;
+}
+@media (max-width: 1367px) {
+  .hero-text-wrapper .hero-circle {
+    width: 200px;
+    height: 200px;
+    left: 84%;
+    top: 59%;
+    z-index: 1;
+    padding: 13px;
+  }
+  .hero-text-wrapper .hero-circle .vector-img {
+    top: 19%;
+    left: 19%;
+    width: 125px;
+  }
 }
 @media (max-width: 1028px) {
   .hero-text-wrapper .hero-circle {
@@ -569,6 +603,55 @@ a {
   line-height: 82.1px;
   font-family: "Wulkan Display", serif;
   font-weight: 500;
+}
+@media (max-width: 1366px) {
+  .about-container {
+    padding: 0 50px;
+  }
+  .about-container h2 {
+    font-size: 3.9em;
+    margin-top: 100px;
+    margin-bottom: 60px;
+    line-height: 1.3em;
+  }
+  .about-container .about-wrap .about-wrap-img {
+    width: 43%;
+    height: 515px;
+  }
+  .about-container .about-wrap .about-wrap-img::before {
+    content: "";
+    top: -250px;
+  }
+  .about-container .about-wrap .about-wrap-text {
+    width: 57%;
+    padding-left: 7%;
+    padding-top: 65px;
+    padding-right: 6%;
+  }
+  .about-container .about-wrap .about-wrap-text h3 {
+    font-size: 24px;
+    line-height: 31px;
+  }
+  .about-container .about-wrap .about-wrap-text p {
+    font-size: 13px;
+    line-height: 20.6px;
+  }
+  .about-container .about-wrap .about-wrap-text button {
+    width: 165px;
+    height: 45px;
+    font-size: 14px;
+  }
+  .about-container .numbers-wrap .numbers-wrap-circle {
+    width: 310px;
+    height: 310px;
+    font-size: 14px;
+    line-height: 22.7px;
+    margin: 0 -15px;
+  }
+  .about-container .numbers-wrap .numbers-wrap-circle span {
+    font-size: 52px;
+    line-height: 52.7px;
+  }
 }
 @media (max-width: 1028px) {
   .about-container {
@@ -777,13 +860,17 @@ a {
   margin-top: 20px;
   font-weight: bold;
 }
-@media (max-width: 1028px) {
+@media (max-width: 1366px) {
   .method-container {
     padding-left: 5%;
     padding-right: 5%;
   }
   .method-container .method-wrap .method-wrap-img {
     height: 540px;
+  }
+  .method-container .method-wrap .method-wrap-img::before {
+    content: "";
+    top: -220px;
   }
   .method-container .method-wrap .method-wrap-text h3 {
     font-size: 44px;
@@ -1045,7 +1132,7 @@ a {
   width: 49%;
   background-color: #F6E1DB;
 }
-@media (max-width: 1028px) {
+@media (max-width: 1366px) {
   .services-container {
     padding: 0 6%;
   }
@@ -1060,7 +1147,7 @@ a {
   }
   .services-container .service-card h4 {
     font-size: 18px;
-    line-height: 24.1px;
+    line-height: 38.1px;
     margin-bottom: 20px;
   }
   .services-container .service-card ul,
@@ -1245,7 +1332,7 @@ a {
   line-height: 77.8px;
   z-index: 2;
 }
-@media (max-width: 1028px) {
+@media (max-width: 1366px) {
   .contact-wrapper {
     padding: 6%;
     padding-top: 10vh;
@@ -1377,6 +1464,10 @@ a {
   font-size: 51px;
   font-weight: normal;
 }
+.how-to-consultation .how-to-consultation-wrapper .how-to-consultation-wrapper-container h3 {
+  font-size: 35px;
+  font-weight: normal;
+}
 .how-to-consultation .how-to-consultation-wrapper .how-to-consultation-wrapper-container p {
   width: 60%;
   text-align: center;
@@ -1396,6 +1487,7 @@ a {
           align-items: center;
   gap: 3%;
   padding: 0 50px;
+  margin-bottom: 70px;
 }
 .how-to-consultation .how-to-consultation-wrapper .how-to-consultation-wrapper-container .how-to-consultation-answers .how-to-consultation-answer {
   width: 33%;
@@ -1404,6 +1496,65 @@ a {
 .how-to-consultation .how-to-consultation-wrapper .how-to-consultation-wrapper-container .how-to-consultation-answers .consultation-answer-img {
   width: 100px;
   height: 100px;
+}
+@media (max-width: 1366px) {
+  .how-to-consultation .how-to-consultation-wrapper {
+    padding: 0 45px;
+  }
+  .how-to-consultation .how-to-consultation-wrapper .how-to-consultation-wrapper-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .how-to-consultation .how-to-consultation-wrapper .how-to-consultation-wrapper-container h2 {
+    margin-top: 70px;
+    margin-bottom: 70px;
+    font-size: 35px;
+    line-height: 37.5px;
+  }
+  .how-to-consultation .how-to-consultation-wrapper .how-to-consultation-wrapper-container h3 {
+    font-size: 35px;
+    font-weight: normal;
+  }
+  .how-to-consultation .how-to-consultation-wrapper .how-to-consultation-wrapper-container p {
+    width: 60%;
+    text-align: center;
+  }
+  .how-to-consultation .how-to-consultation-wrapper .how-to-consultation-wrapper-container .how-to-consultation-answers {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 3%;
+    padding: 0 50px;
+    margin-bottom: 70px;
+  }
+  .how-to-consultation .how-to-consultation-wrapper .how-to-consultation-wrapper-container .how-to-consultation-answers .how-to-consultation-answer {
+    width: 33%;
+    text-align: center;
+  }
+  .how-to-consultation .how-to-consultation-wrapper .how-to-consultation-wrapper-container .how-to-consultation-answers .consultation-answer-img {
+    width: 100px;
+    height: 100px;
+  }
 }
 
 /**************SECTION SCHOOL*****************/
@@ -1533,6 +1684,16 @@ a {
 }
 .numerology-school .about-course .card-13 {
   background: #F6E1DB;
+}
+@media (max-width: 1366px) {
+  .numerology-school {
+    padding: 0 6%;
+    padding-top: 100px;
+  }
+  .numerology-school h2 {
+    font-size: 35px;
+    line-height: 37.5px;
+  }
 }
 
 /*****************SCHOOL PROGRAM**************************/
@@ -1687,6 +1848,17 @@ a {
   margin: 0;
   color: black;
 }
+@media (max-width: 1366px) {
+  .study-program {
+    padding: 0 6%;
+  }
+  .study-program .container .study-program-img {
+    min-height: 500px;
+  }
+  .study-program .container .study-program-img::before {
+    top: -190px;
+  }
+}
 
 /**************reviews**********************/
 .reviews .container {
@@ -1765,6 +1937,15 @@ a {
   bottom: 0px;
   left: 0px;
   z-index: 1;
+}
+@media (max-width: 1366px) {
+  .reviews {
+    padding: 0 6%;
+  }
+  .reviews h2 {
+    font-size: 35px;
+    line-height: 37.5px;
+  }
 }
 
 footer {

@@ -24,6 +24,9 @@ body {
     font-family: 'Manrope', sans-serif;
     color: #331B07;
     font-size: 1vw;
+    @media(max-width: 1366px) {
+        overflow-x: hidden;
+    }
 }
 
 h1,
@@ -106,6 +109,10 @@ a {
 
                 &:hover {
                     color: #B49378;
+                }
+
+                @media (max-width: 1367px) {
+                    font-size: 12px;
                 }
             }
         }
@@ -263,6 +270,16 @@ a {
             padding-left: 22%;
         }
 
+        @media(max-width: 1367px) {
+            h1 {
+                font-size: 4.7em;
+                line-height: 1.25em;
+                padding-left: 2.5%;
+                margin-top: 10.5%;
+                margin-bottom: 20px;
+            }
+        }
+
         @media(max-width: 1028px) {
             h1 {
                 font-size: 6.5em;
@@ -374,6 +391,21 @@ a {
 
         .coloring {
             animation: coloring 18s linear infinite;
+        }
+
+        @media (max-width: 1367px) {
+            width: 200px;
+            height: 200px;
+            left: 84%;
+            top: 59%;
+            z-index: 1;
+            padding: 13px;
+
+            .vector-img {
+                top: 19%;
+                left: 19%;
+                width: 125px;
+            }
         }
 
         @media(max-width: 1028px) {
@@ -571,6 +603,69 @@ a {
                 font-weight: 500;
             }
         }
+    }
+
+    @media(max-width: 1366px) {
+        padding: 0 50px;
+
+        h2 {
+            font-size: 3.9em;
+            margin-top: 100px;
+            margin-bottom: 60px;
+            line-height: 1.3em;
+        }
+
+        .about-wrap {
+
+            .about-wrap-img {
+                width: 43%;
+                height: 515px;
+
+                &::before {
+                    content: "";
+                    top: -250px;
+                }
+            }
+
+            .about-wrap-text {
+                width: 57%;
+                padding-left: 7%;
+                padding-top: 65px;
+                padding-right: 6%;
+
+                h3 {
+                    font-size: 24px;
+                    line-height: 31px;
+                }
+
+                p {
+                    font-size: 13px;
+                    line-height: 20.6px;
+                }
+
+                button {
+                    width: 165px;
+                    height: 45px;
+                    font-size: 14px;
+                }
+            }
+        }
+
+        .numbers-wrap {
+            .numbers-wrap-circle {
+                width: 310px;
+                height: 310px;
+                font-size: 14px;
+                line-height: 22.7px;
+                margin: 0 -15px;
+
+                span {
+                    font-size: 52px;
+                    line-height: 52.7px;
+                }
+            }
+        }
+
     }
 
     @media(max-width: 1028px) {
@@ -822,13 +917,18 @@ a {
         }
     }
 
-    @media(max-width: 1028px) {
+    @media(max-width: 1366px) {
         padding-left: 5%;
         padding-right: 5%;
 
         .method-wrap {
             .method-wrap-img {
                 height: 540px;
+
+                &::before {
+                    content: "";
+                    top: -220px;
+                }
             }
 
             .method-wrap-text {
@@ -1111,7 +1211,7 @@ a {
         background-color: #F6E1DB;
     }
 
-    @media(max-width: 1028px) {
+    @media(max-width: 1366px) {
         padding: 0 6%;
 
         h2 {
@@ -1126,7 +1226,7 @@ a {
 
             h4 {
                 font-size: 18px;
-                line-height: 24.1px;
+                line-height: 38.1px;
                 margin-bottom: 20px;
             }
 
@@ -1324,7 +1424,7 @@ a {
         }
     }
 
-    @media(max-width: 1028px) {
+    @media(max-width: 1366px) {
         padding: 6%;
         padding-top: 10vh;
 
@@ -1470,6 +1570,11 @@ a {
                 font-weight: normal;
             }
 
+            h3 {
+                font-size: 35px;
+                font-weight: normal;
+            }
+
             p {
                 width: 60%;
                 text-align: center;
@@ -1483,6 +1588,7 @@ a {
                 align-items: center;
                 gap: 3%;
                 padding: 0 50px;
+                margin-bottom: 70px;
 
                 .how-to-consultation-answer {
                     // border: 1px solid rgb(60, 0, 128);
@@ -1493,6 +1599,59 @@ a {
                 .consultation-answer-img {
                     width: 100px;
                     height: 100px;
+                }
+            }
+        }
+    }
+
+    @media(max-width: 1366px) {
+        .how-to-consultation-wrapper {
+            padding: 0 45px;
+
+            .how-to-consultation-wrapper-container {
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                h2 {
+                    margin-top: 70px;
+                    margin-bottom: 70px;
+                    font-size: 35px;
+                    line-height: 37.5px;
+                }
+
+                h3 {
+                    font-size: 35px;
+                    font-weight: normal;
+                }
+
+                p {
+                    width: 60%;
+                    text-align: center;
+                }
+
+                .how-to-consultation-answers {
+                    // border: 1px solid green;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    align-items: center;
+                    gap: 3%;
+                    padding: 0 50px;
+                    margin-bottom: 70px;
+
+                    .how-to-consultation-answer {
+                        // border: 1px solid rgb(60, 0, 128);
+                        width: 33%;
+                        text-align: center;
+                    }
+
+                    .consultation-answer-img {
+                        width: 100px;
+                        height: 100px;
+                    }
                 }
             }
         }
@@ -1607,6 +1766,14 @@ a {
         }
     }
 
+    @media(max-width: 1366px) {
+        padding: 0 6%;
+        padding-top: 100px;
+        h2 {
+            font-size: 35px;
+            line-height: 37.5px;
+        }
+    }
 }
 
 /*****************SCHOOL PROGRAM**************************/
@@ -1779,6 +1946,21 @@ a {
 
         /*****accordion OFF******/
     }
+
+    @media(max-width: 1366px) {
+        padding: 0 6%;
+
+        .container {
+
+            .study-program-img {
+                min-height: 500px;
+
+                &::before {
+                    top: -190px;
+                }
+            }
+        }
+    }
 }
 
 
@@ -1870,6 +2052,15 @@ a {
                 }
             }
 
+        }
+    }
+
+    @media(max-width: 1366px) {
+        padding: 0 6%;
+
+        h2 {
+            font-size: 35px;
+            line-height: 37.5px;
         }
     }
 }
