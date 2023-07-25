@@ -1350,6 +1350,7 @@ a {
                 .p-2 {
                     display: none;
                 }
+
                 .vision {
                     display: block;
                 }
@@ -2299,112 +2300,112 @@ a {
 
     // }
 
-        .container {
-            margin: 75px auto 45px auto;
-            height: 550px;
+    .container {
+        margin: 75px auto 45px auto;
+        height: 550px;
 
-            h2 {
-                font-size: 51px;
-                line-height: 1.3em;
-                width: 100%;
-                text-align: center;
-                font-weight: normal;
-            }
-
-            .rewies_images {
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-                gap: 25px;
-
-                .rewies_img {
-                    width: 300px;
-                    height: 300px;
-                    position: relative;
-
-                }
-
-                #rewies_img-1 {
-                    &::before {
-                        content: "";
-                        background-image: url('../assets/img/comments/com-1.PNG');
-                        background-size: contain;
-                        background-repeat: no-repeat;
-                        position: absolute;
-                        top: 0px;
-                        right: 0px;
-                        bottom: 0px;
-                        left: 0px;
-                        z-index: 1;
-                    }
-                }
-
-                #rewies_img-2 {
-                    &::before {
-                        content: "";
-                        background-image: url('../assets/img/comments/com-2.PNG');
-                        background-size: contain;
-                        background-repeat: no-repeat;
-                        position: absolute;
-                        top: 0px;
-                        right: 0px;
-                        bottom: 0px;
-                        left: 0px;
-                        z-index: 1;
-                    }
-                }
-
-                #rewies_img-3 {
-                    &::before {
-                        content: "";
-                        background-image: url('../assets/img/comments/com-3.PNG');
-                        background-size: contain;
-                        background-repeat: no-repeat;
-                        position: absolute;
-                        top: 0px;
-                        right: 0px;
-                        bottom: 0px;
-                        left: 0px;
-                        z-index: 1;
-                    }
-                }
-
-                #rewies_img-4 {
-                    &::before {
-                        content: "";
-                        background-image: url('../assets/img/comments/com-4.PNG');
-                        background-size: contain;
-                        background-repeat: no-repeat;
-                        position: absolute;
-                        top: 0px;
-                        right: 0px;
-                        bottom: 0px;
-                        left: 0px;
-                        z-index: 1;
-                    }
-                }
-
-            }
+        h2 {
+            font-size: 51px;
+            line-height: 1.3em;
+            width: 100%;
+            text-align: center;
+            font-weight: normal;
         }
 
-        @media(max-width: 1366px) {
-            padding: 0 6%;
+        .rewies_images {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 25px;
 
-            h2 {
-                font-size: 35px;
-                line-height: 37.5px;
+            .rewies_img {
+                width: 300px;
+                height: 300px;
+                position: relative;
+
             }
-        }
 
-        @media(max-width: 470px) {
-            .container {
-                h2 {
-                    font-size: 30px;
+            #rewies_img-1 {
+                &::before {
+                    content: "";
+                    background-image: url('../assets/img/comments/com-1.PNG');
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    position: absolute;
+                    top: 0px;
+                    right: 0px;
+                    bottom: 0px;
+                    left: 0px;
+                    z-index: 1;
+                }
+            }
+
+            #rewies_img-2 {
+                &::before {
+                    content: "";
+                    background-image: url('../assets/img/comments/com-2.PNG');
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    position: absolute;
+                    top: 0px;
+                    right: 0px;
+                    bottom: 0px;
+                    left: 0px;
+                    z-index: 1;
+                }
+            }
+
+            #rewies_img-3 {
+                &::before {
+                    content: "";
+                    background-image: url('../assets/img/comments/com-3.PNG');
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    position: absolute;
+                    top: 0px;
+                    right: 0px;
+                    bottom: 0px;
+                    left: 0px;
+                    z-index: 1;
+                }
+            }
+
+            #rewies_img-4 {
+                &::before {
+                    content: "";
+                    background-image: url('../assets/img/comments/com-4.PNG');
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    position: absolute;
+                    top: 0px;
+                    right: 0px;
+                    bottom: 0px;
+                    left: 0px;
+                    z-index: 1;
                 }
             }
 
         }
     }
+
+    @media(max-width: 1366px) {
+        padding: 0 6%;
+
+        h2 {
+            font-size: 35px;
+            line-height: 37.5px;
+        }
+    }
+
+    @media(max-width: 470px) {
+        .container {
+            h2 {
+                font-size: 30px;
+            }
+        }
+
+    }
+}
 
 footer {
     display: flex;
