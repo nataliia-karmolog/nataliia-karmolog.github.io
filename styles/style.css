@@ -490,6 +490,12 @@ a {
     height: 100%;
   }
 }
+@media screen and (max-width: 470px) {
+  .hero-img::before {
+    content: "";
+    top: -240px;
+  }
+}
 
 /**********SECTION ABOUT***********/
 .about-container h2 {
@@ -751,13 +757,16 @@ a {
     width: 100%;
     height: 290px;
   }
+  .about-container .about-wrap .about-wrap-img::before {
+    top: -185px;
+  }
   .about-container .about-wrap .about-wrap-text {
     width: 100%;
     padding-top: 20px;
     padding-right: 6%;
   }
   .about-container .about-wrap .about-wrap-text h3 {
-    font-size: 32px;
+    font-size: 28px;
     line-height: 35px;
   }
   .about-container .about-wrap .about-wrap-text p {
@@ -825,7 +834,6 @@ a {
   width: 43%;
   height: 760px;
   position: relative;
-  border-radius: 45px;
 }
 .method-container .method-wrap .method-wrap-img::before {
   content: "";
@@ -913,11 +921,19 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     gap: 15px;
+    height: 800px;
   }
   .method-container .method-wrap .method-wrap-img {
-    height: 505px;
     width: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  .method-container .method-wrap .method-wrap-img::before {
+    top: -170px;
   }
   .method-container .method-wrap .method-wrap-text {
     padding-right: 0;
@@ -932,7 +948,7 @@ a {
     text-align: center;
   }
   .method-container .method-wrap .method-wrap-text p {
-    font-size: 18px;
+    font-size: 17.5px;
     line-height: 28.6px;
     margin: 0;
     padding-right: 0%;
@@ -1223,14 +1239,49 @@ a {
     padding: 40px 35px;
     border-radius: 45px;
   }
-  .services-container .service-card h4 {
-    font-size: 23.4px;
-    line-height: 26px;
+  .services-container .service-card .service-card-text {
+    width: 100%;
+  }
+  .services-container .service-card .service-card-text h4 {
+    text-align: center;
+    font-size: 20px;
+    line-height: 30px;
     margin-bottom: 18px;
+  }
+  .services-container .service-card .service-card-text ul,
+  .services-container .service-card .service-card-text .p-2 {
+    display: none;
+  }
+  .services-container .service-card .service-card-text .vision {
+    display: block;
+  }
+  .services-container .service-card .service-card-text .service-card-footer .service-card-price {
+    font-size: 20px;
+  }
+  .services-container .service-card .service-card-text .service-card-footer .service-card-price span {
+    font-size: 12px;
+  }
+  .services-container .service-card .service-card-text .service-card-footer .service-card-order {
+    font-size: 15px;
   }
   .services-container .service-card ul,
   .services-container .service-card li {
     font-size: 16px;
+  }
+  .services-container .low-priority-cars-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .services-container .low-priority-cars-wrap .service-card {
+    width: 100%;
+  }
+  .services-container .low-priority-cars-wrap .card-7 {
+    margin-top: 10px;
+  }
+  .services-container .service-card-img {
+    display: none;
   }
 }
 
@@ -1556,6 +1607,42 @@ a {
     height: 100px;
   }
 }
+@media (max-width: 470px) {
+  .how-to-consultation .how-to-consultation-wrapper .how-to-consultation-wrapper-container h2,
+  .how-to-consultation .how-to-consultation-wrapper .how-to-consultation-wrapper-container h3 {
+    text-align: center;
+    font-size: 30px;
+    line-height: 37.5px;
+    width: 100%;
+  }
+  .how-to-consultation .how-to-consultation-wrapper .how-to-consultation-wrapper-container .how-to-consultation-answers {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 10px;
+    padding: 0;
+    margin-bottom: 60px;
+  }
+  .how-to-consultation .how-to-consultation-wrapper .how-to-consultation-wrapper-container .how-to-consultation-answers .how-to-consultation-answer {
+    width: 100%;
+    font-size: 15px;
+  }
+  .how-to-consultation .how-to-consultation-wrapper .how-to-consultation-wrapper-container .how-to-consultation-answers .consultation-answer-img {
+    width: 60px;
+    height: 60px;
+  }
+  .how-to-consultation .how-to-consultation-wrapper .how-to-consultation-wrapper-container p {
+    font-size: 15px;
+    width: 100%;
+    margin: 0;
+  }
+}
 
 /**************SECTION SCHOOL*****************/
 .numerology-school {
@@ -1693,6 +1780,92 @@ a {
   .numerology-school h2 {
     font-size: 35px;
     line-height: 37.5px;
+  }
+}
+@media (max-width: 470px) {
+  .numerology-school h2 {
+    font-size: 30px;
+    line-height: 38px;
+    text-align: center;
+  }
+  .numerology-school .numerology-school-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 700px;
+  }
+  .numerology-school .numerology-school-wrapper .numerology-school-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    height: 60%;
+    padding: 40px 30px;
+  }
+  .numerology-school .numerology-school-wrapper .numerology-school-text p {
+    font-size: 15px;
+  }
+  .numerology-school .numerology-school-wrapper .numerology-school-wrap-img {
+    width: 100%;
+    height: 40%;
+    position: relative;
+    overflow: hidden;
+  }
+  .numerology-school .numerology-school-wrapper .numerology-school-wrap-img::before {
+    top: -200px;
+  }
+  .numerology-school .about-course {
+    margin-top: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 5px;
+  }
+  .numerology-school .about-course .service-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    margin-bottom: 2%;
+    padding: 20px 20px 30px;
+    border-radius: 45px;
+  }
+  .numerology-school .about-course .service-card .service-card-text {
+    width: 100%;
+    font-size: 15px;
+  }
+  .numerology-school .about-course .service-card .service-card-text h4 {
+    font-size: 19px;
+    text-transform: uppercase;
+    margin-left: 42px;
   }
 }
 
@@ -1859,6 +2032,23 @@ a {
     top: -190px;
   }
 }
+@media (max-width: 470px) {
+  .study-program .container .study-program-img {
+    display: none;
+  }
+  .study-program .container .study-program-wrap {
+    width: 100%;
+  }
+  .study-program .container .study-program-wrap h2 {
+    font-size: 23px;
+  }
+  .study-program .container .study-program-wrap .row .col .tabs .tab .tab-label {
+    font-size: 15px;
+  }
+  .study-program .container .study-program-wrap .row .col .tabs .tab .tab-content .according-ul li {
+    font-size: 15px;
+  }
+}
 
 /**************reviews**********************/
 .reviews .container {
@@ -1945,6 +2135,11 @@ a {
   .reviews h2 {
     font-size: 35px;
     line-height: 37.5px;
+  }
+}
+@media (max-width: 470px) {
+  .reviews .container h2 {
+    font-size: 30px;
   }
 }
 
