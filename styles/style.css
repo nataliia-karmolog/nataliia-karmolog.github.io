@@ -2051,8 +2051,160 @@ a {
 }
 
 /**************reviews**********************/
+.reviews {
+  margin-top: 40px;
+  padding: 0 6%;
+}
+.reviews .container-reviews {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 580px;
+  position: relative;
+  overflow: hidden;
+}
+.reviews .container-reviews h2 {
+  text-align: center;
+  font-size: 35px;
+  font-weight: normal;
+  line-height: 45px;
+}
+.reviews .container-reviews label {
+  background: #444;
+  color: #fff;
+  -webkit-transition: -webkit-transform 400ms ease-out;
+  transition: -webkit-transform 400ms ease-out;
+  transition: transform 400ms ease-out;
+  transition: transform 400ms ease-out, -webkit-transform 400ms ease-out;
+  display: inline-block;
+  min-height: 400px;
+  width: 100%;
+  height: 400px;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  line-height: 100vh;
+}
+.reviews .container-reviews form {
+  display: none;
+  position: absolute;
+  top: 180px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  white-space: nowrap;
+}
+.reviews .container-reviews input {
+  position: absolute;
+}
+.reviews .container-reviews .keys {
+  position: fixed;
+  z-index: 10;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+  color: #fff;
+  text-align: center;
+  -webkit-transition: all 300ms linear;
+  transition: all 300ms linear;
+  opacity: 0;
+}
+.reviews .container-reviews input:focus ~ .keys {
+  opacity: 0.8;
+}
+.reviews .container-reviews input:nth-of-type(1):checked ~ label:nth-of-type(1),
+.reviews .container-reviews input:nth-of-type(2):checked ~ label:nth-of-type(2),
+.reviews .container-reviews input:nth-of-type(3):checked ~ label:nth-of-type(3),
+.reviews .container-reviews input:nth-of-type(4):checked ~ label:nth-of-type(4) {
+  z-index: 0;
+}
+.reviews .container-reviews input:nth-of-type(1):checked ~ label {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+.reviews .container-reviews input:nth-of-type(2):checked ~ label {
+  -webkit-transform: translate3d(-100%, 0, 0);
+          transform: translate3d(-100%, 0, 0);
+}
+.reviews .container-reviews input:nth-of-type(3):checked ~ label {
+  -webkit-transform: translate3d(-200%, 0, 0);
+          transform: translate3d(-200%, 0, 0);
+}
+.reviews .container-reviews input:nth-of-type(4):checked ~ label {
+  -webkit-transform: translate3d(-300%, 0, 0);
+          transform: translate3d(-300%, 0, 0);
+}
+.reviews .container-reviews label {
+  background: #444444;
+  background-size: cover;
+  font-size: 3rem;
+}
+.reviews .container-reviews label[for=clubs] {
+  background: #ffffff;
+  background-image: url("../assets/img/comments/com-1.PNG");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  left: 0px;
+}
+.reviews .container-reviews label[for=hearts] {
+  background: #ffffff;
+  background-image: url("../assets/img/comments/com-2.PNG");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  left: 0px;
+}
+.reviews .container-reviews label[for=spades] {
+  background: #ffffff;
+  background-image: url("../assets/img/comments/com-3.PNG");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  left: 0px;
+}
+.reviews .container-reviews label[for=diamonds] {
+  background: #ffffff;
+  background-image: url("../assets/img/comments/com-4.PNG");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  left: 0px;
+}
+.reviews .container-reviews label:before,
+.reviews .container-reviews label:after {
+  color: rgb(245, 7, 7);
+  display: block;
+  background: rgba(255, 255, 255, 0.2);
+  position: absolute;
+  padding: 1rem;
+  font-size: 3rem;
+  height: 10rem;
+  vertical-align: middle;
+  line-height: 10rem;
+  top: 50%;
+  -webkit-transform: translate3d(0, -50%, 0);
+          transform: translate3d(0, -50%, 0);
+  cursor: pointer;
+}
+.reviews .container-reviews label:before {
+  content: "❭";
+  right: 100%;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+.reviews .container-reviews label:after {
+  content: "❬";
+  left: 100%;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
 .reviews .container {
-  margin: 75px auto 45px auto;
+  margin: 45px auto 45px auto;
   height: 550px;
 }
 .reviews .container h2 {
@@ -2140,6 +2292,12 @@ a {
 @media (max-width: 470px) {
   .reviews .container h2 {
     font-size: 30px;
+  }
+  .reviews .container form {
+    display: block;
+  }
+  .reviews .container .rewies_images {
+    display: none;
   }
 }
 
