@@ -456,6 +456,10 @@ a {
 
 }
 
+// .consultation-page {
+//     width: 100%;
+// }
+
 .hero-img {
     width: 45%;
     position: relative;
@@ -495,8 +499,15 @@ a {
     @media screen and (max-width: 470px) {
         &::before {
             content: "";
-
             top: -240px;
+
+        }
+    }
+
+    @media screen and (max-width: 376px) {
+        &::before {
+            content: "";
+            top: -210px;
 
         }
     }
@@ -850,6 +861,16 @@ a {
             }
         }
     }
+
+    @media screen and (max-width: 376px) {
+        .about-wrap {
+            .about-wrap-img {
+                &::before {
+                    top: -135px;
+                }
+            }
+        }
+    }
 }
 
 /*************SECTION METHOD************/
@@ -1037,6 +1058,16 @@ a {
             }
         }
     }
+
+    @media (max-width: 376px) {
+        .method-wrap {
+            .method-wrap-img {
+                &::before {
+                    top: -145px;
+                }
+            }
+        }
+    }
 }
 
 /**************SECTION SERVICES*****************/
@@ -1107,6 +1138,7 @@ a {
                     font-size: 40px;
                     font-weight: bold;
 
+
                     span {
                         font-size: 17px;
                     }
@@ -1139,7 +1171,12 @@ a {
                 overflow: hidden;
             }
         }
-
+        .consultation-page {
+           .service-card-text{
+            width: 100%;
+           }
+          
+        }
 
     }
 
@@ -1370,6 +1407,13 @@ a {
                 }
             }
 
+            .consultation-page {
+                ul,
+                .p-2 {
+                    display: block;
+                }
+            }
+
             ul,
             li {
                 font-size: 16px;
@@ -1391,6 +1435,27 @@ a {
         .service-card-img {
             display: none;
 
+        }
+    }
+
+    @media (max-width: 415px) {
+
+        .service-card {
+            .service-card-text {
+                .service-card-footer {
+                    .service-card-price {
+                        font-size: 15px;
+
+                        span {
+                            font-size: 10px;
+                        }
+                    }
+
+                    .service-card-order {
+                        font-size: 13px;
+                    }
+                }
+            }
         }
     }
 }
@@ -1953,6 +2018,24 @@ a {
             }
         }
     }
+
+    @media (max-width: 376px) {
+
+        .numerology-school-wrapper {
+            .numerology-school-text {
+                height: 65%;
+            }
+
+            .numerology-school-wrap-img {
+                height: 35%;
+
+                &::before {
+                    top: -180px;
+                }
+            }
+
+        }
+    }
 }
 
 /*****************SCHOOL PROGRAM**************************/
@@ -2177,6 +2260,7 @@ a {
 
         }
     }
+
 }
 
 
@@ -2447,9 +2531,11 @@ a {
             h2 {
                 font-size: 30px;
             }
+
             form {
                 display: block;
             }
+
             .rewies_images {
                 display: none;
             }

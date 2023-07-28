@@ -496,6 +496,12 @@ a {
     top: -240px;
   }
 }
+@media screen and (max-width: 376px) {
+  .hero-img::before {
+    content: "";
+    top: -210px;
+  }
+}
 
 /**********SECTION ABOUT***********/
 .about-container h2 {
@@ -794,6 +800,11 @@ a {
     line-height: 52.7px;
   }
 }
+@media screen and (max-width: 376px) {
+  .about-container .about-wrap .about-wrap-img::before {
+    top: -135px;
+  }
+}
 
 /*************SECTION METHOD************/
 .method-container {
@@ -954,6 +965,11 @@ a {
     padding-right: 0%;
   }
 }
+@media (max-width: 376px) {
+  .method-container .method-wrap .method-wrap-img::before {
+    top: -145px;
+  }
+}
 
 /**************SECTION SERVICES*****************/
 .services-container {
@@ -1062,6 +1078,9 @@ a {
   background-size: cover;
   position: absolute;
   overflow: hidden;
+}
+.services-container .service-card .consultation-page .service-card-text {
+  width: 100%;
 }
 .services-container .card-1 {
   background-color: #EAE4DD;
@@ -1264,6 +1283,10 @@ a {
   .services-container .service-card .service-card-text .service-card-footer .service-card-order {
     font-size: 15px;
   }
+  .services-container .service-card .consultation-page ul,
+  .services-container .service-card .consultation-page .p-2 {
+    display: block;
+  }
   .services-container .service-card ul,
   .services-container .service-card li {
     font-size: 16px;
@@ -1282,6 +1305,17 @@ a {
   }
   .services-container .service-card-img {
     display: none;
+  }
+}
+@media (max-width: 415px) {
+  .services-container .service-card .service-card-text .service-card-footer .service-card-price {
+    font-size: 15px;
+  }
+  .services-container .service-card .service-card-text .service-card-footer .service-card-price span {
+    font-size: 10px;
+  }
+  .services-container .service-card .service-card-text .service-card-footer .service-card-order {
+    font-size: 13px;
   }
 }
 
@@ -1866,6 +1900,17 @@ a {
     font-size: 19px;
     text-transform: uppercase;
     margin-left: 42px;
+  }
+}
+@media (max-width: 376px) {
+  .numerology-school .numerology-school-wrapper .numerology-school-text {
+    height: 65%;
+  }
+  .numerology-school .numerology-school-wrapper .numerology-school-wrap-img {
+    height: 35%;
+  }
+  .numerology-school .numerology-school-wrapper .numerology-school-wrap-img::before {
+    top: -180px;
   }
 }
 
