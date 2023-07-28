@@ -496,6 +496,12 @@ a {
     top: -240px;
   }
 }
+@media screen and (max-width: 415px) {
+  .hero-img::before {
+    content: "";
+    top: -210px;
+  }
+}
 @media screen and (max-width: 376px) {
   .hero-img::before {
     content: "";
