@@ -1958,6 +1958,16 @@ a {
             font-size: 35px;
             line-height: 37.5px;
         }
+        .numerology-school-wrapper {
+
+            .numerology-school-wrap-img {
+                &::before {
+                    top: -180px;
+                }
+            }
+
+        }
+        
     }
 
     @media (max-width: 470px) {
