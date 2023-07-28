@@ -2029,6 +2029,23 @@ a {
             }
         }
     }
+    @media (max-width: 414px) {
+
+        .numerology-school-wrapper {
+            .numerology-school-text {
+                height: 65%;
+            }
+
+            .numerology-school-wrap-img {
+                height: 35%;
+
+                &::before {
+                    top: -170px;
+                }
+            }
+
+        }
+    }
 
     @media (max-width: 376px) {
 

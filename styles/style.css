@@ -1908,6 +1908,17 @@ a {
     margin-left: 42px;
   }
 }
+@media (max-width: 414px) {
+  .numerology-school .numerology-school-wrapper .numerology-school-text {
+    height: 65%;
+  }
+  .numerology-school .numerology-school-wrapper .numerology-school-wrap-img {
+    height: 35%;
+  }
+  .numerology-school .numerology-school-wrapper .numerology-school-wrap-img::before {
+    top: -170px;
+  }
+}
 @media (max-width: 376px) {
   .numerology-school .numerology-school-wrapper .numerology-school-text {
     height: 65%;
