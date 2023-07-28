@@ -43,10 +43,10 @@ a {
 
 .container {
     margin: 0 auto;
-    max-width: 1450px;
+    max-width: 1624px;
     // max-width: 100vw;
     overflow-x: hidden;
-    padding: 0 5px;
+    padding: 0 5%;
 }
 
 #hero {
@@ -1171,11 +1171,12 @@ a {
                 overflow: hidden;
             }
         }
+
         .consultation-page {
-           .service-card-text{
-            width: 100%;
-           }
-          
+            .service-card-text {
+                width: 100%;
+            }
+
         }
 
     }
@@ -1408,6 +1409,7 @@ a {
             }
 
             .consultation-page {
+
                 ul,
                 .p-2 {
                     display: block;

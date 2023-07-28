@@ -41,9 +41,9 @@ a {
 
 .container {
   margin: 0 auto;
-  max-width: 1450px;
+  max-width: 1624px;
   overflow-x: hidden;
-  padding: 0 5px;
+  padding: 0 5%;
 }
 
 #hero {
