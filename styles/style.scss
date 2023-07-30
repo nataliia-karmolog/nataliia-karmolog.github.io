@@ -1477,6 +1477,11 @@ a {
     padding-bottom: 120px;
     margin-top: -30px;
 
+    @media (max-width: 470px) {
+        margin-top: -0px;
+        padding-bottom: 20px;
+    }
+
     .meditation-container {
         overflow: hidden;
 
@@ -1648,6 +1653,7 @@ a {
         }
 
         @media (max-width: 470px) {
+
             h2 {
                 margin-top: 80px;
                 font-size: 30px;

@@ -1330,6 +1330,12 @@ a {
   padding-bottom: 120px;
   margin-top: -30px;
 }
+@media (max-width: 470px) {
+  .section-meditation {
+    margin-top: 0px;
+    padding-bottom: 20px;
+  }
+}
 .section-meditation .meditation-container {
   overflow: hidden;
 }
