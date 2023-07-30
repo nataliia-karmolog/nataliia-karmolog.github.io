@@ -1476,7 +1476,6 @@ a {
 .section-meditation {
     padding-bottom: 120px;
     margin-top: -30px;
-
     @media (max-width: 470px) {
         margin-top: -0px;
         padding-bottom: 20px;
@@ -1514,6 +1513,7 @@ a {
                     text-align: center;
                     color: white;
                     letter-spacing: 2px;
+font-weight: normal;
                 }
 
                 .meditation-card-order {
@@ -1522,6 +1522,7 @@ a {
                     bottom: 18%;
                     color: white;
                     letter-spacing: 1px;
+                    font-size: 16px;
                 }
             }
 
@@ -1653,7 +1654,7 @@ a {
         }
 
         @media (max-width: 470px) {
-
+            
             h2 {
                 margin-top: 80px;
                 font-size: 30px;
@@ -1677,7 +1678,7 @@ a {
                     .meditation-card-order {
                         left: 36%;
                         bottom: 18%;
-                        font-size: 17px;
+                        font-size: 15px;
                     }
                 }
             }

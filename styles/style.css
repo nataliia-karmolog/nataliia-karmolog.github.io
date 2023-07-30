@@ -1374,6 +1374,7 @@ a {
   text-align: center;
   color: white;
   letter-spacing: 2px;
+  font-weight: normal;
 }
 .section-meditation .meditation-container .meditation-wrap .meditation-card .meditation-card-order {
   position: absolute;
@@ -1381,6 +1382,7 @@ a {
   bottom: 18%;
   color: white;
   letter-spacing: 1px;
+  font-size: 16px;
 }
 .section-meditation .meditation-container .meditation-wrap #stars {
   width: 1px;
@@ -1505,7 +1507,7 @@ a {
   .section-meditation .meditation-container .meditation-wrap .meditation-card .meditation-card-order {
     left: 36%;
     bottom: 18%;
-    font-size: 17px;
+    font-size: 15px;
   }
 }
 
