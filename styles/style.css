@@ -1923,6 +1923,20 @@ a {
   width: 57%;
   padding: 50px 40px;
 }
+.numerology-school .numerology-school-wrapper .numerology-school-text button {
+  width: 275px;
+  height: 60px;
+  border-radius: 35px;
+  font-size: 18px;
+  color: white;
+  border: none;
+  background-color: #B49378;
+  margin-top: 30px;
+}
+.numerology-school .numerology-school-wrapper .numerology-school-text button:hover {
+  cursor: pointer;
+  background-color: rgba(180, 147, 120, 0.5411764706);
+}
 .numerology-school .numerology-school-wrapper .numerology-school-wrap-img {
   width: 43%;
   height: 500px;
@@ -2028,7 +2042,7 @@ a {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    height: 730px;
+    height: 930px;
   }
   .numerology-school .numerology-school-wrapper .numerology-school-text {
     display: -webkit-box;
@@ -2159,7 +2173,7 @@ a {
   background-image: url("../assets/img/8.webp");
   background-size: cover;
   position: absolute;
-  top: -230px;
+  top: -300px;
   right: 0px;
   bottom: 0px;
   left: 0px;

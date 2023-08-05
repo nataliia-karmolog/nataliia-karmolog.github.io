@@ -1476,6 +1476,7 @@ a {
 .section-meditation {
     padding-bottom: 120px;
     margin-top: -30px;
+
     @media (max-width: 470px) {
         margin-top: -0px;
         padding-bottom: 20px;
@@ -1513,7 +1514,7 @@ a {
                     text-align: center;
                     color: white;
                     letter-spacing: 2px;
-font-weight: normal;
+                    font-weight: normal;
                 }
 
                 .meditation-card-order {
@@ -1654,7 +1655,7 @@ font-weight: normal;
         }
 
         @media (max-width: 470px) {
-            
+
             h2 {
                 margin-top: 80px;
                 font-size: 30px;
@@ -2092,6 +2093,22 @@ font-weight: normal;
             width: 57%;
             padding: 50px 40px;
 
+            button {
+                width: 275px;
+                height: 60px;
+                border-radius: 35px;
+                font-size: 18px;
+                color: white;
+                border: none;
+                background-color: #B49378;
+                margin-top: 30px;
+
+                &:hover {
+                    cursor: pointer;
+                    background-color: #b493788a;
+                }
+            }
+
         }
 
         .numerology-school-wrap-img {
@@ -2201,7 +2218,7 @@ font-weight: normal;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            height: 730px;
+            height: 930px;
 
             .numerology-school-text {
                 display: flex;
@@ -2328,7 +2345,7 @@ font-weight: normal;
                 background-image: url('../assets/img/8.webp');
                 background-size: cover;
                 position: absolute;
-                top: -230px;
+                top: -300px;
                 right: 0px;
                 bottom: 0px;
                 left: -0px;
