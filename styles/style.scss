@@ -1224,9 +1224,13 @@ a {
         }
     }
 
+    .card-3 {
+        background-color: #EAE4DD;
+    }
+
     #card-3-img {
         &::before {
-            background-image: url('../assets/img/lila.jpg');
+            background-image: url('../assets/img/lila.webp');
             top: -250px;
             right: -65px;
             bottom: -50px;

@@ -1115,8 +1115,11 @@ a {
   bottom: -50px;
   left: -65px;
 }
+.services-container .card-3 {
+  background-color: #EAE4DD;
+}
 .services-container #card-3-img::before {
-  background-image: url("../assets/img/lila.jpg");
+  background-image: url("../assets/img/lila.webp");
   top: -250px;
   right: -65px;
   bottom: -50px;
