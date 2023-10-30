@@ -1073,6 +1073,9 @@ a {
   letter-spacing: 2px;
   color: #331B07;
 }
+.services-container .service-card .service-card-text .service-card-footer__info {
+  margin-bottom: -40px;
+}
 .services-container .service-card .service-card-img {
   width: 43%;
   height: 100%;
@@ -1111,6 +1114,13 @@ a {
   right: 0px;
   bottom: -50px;
   left: -65px;
+}
+.services-container #card-3-img::before {
+  background-image: url("../assets/img/lila.jpg");
+  top: -250px;
+  right: -65px;
+  bottom: -50px;
+  left: 0px;
 }
 .services-container .low-priority-cars-wrap {
   display: -webkit-box;
@@ -1161,7 +1171,6 @@ a {
 }
 .services-container .card-5 {
   width: 49%;
-  height: 370px;
   background-color: #EAE4DD;
 }
 .services-container .card-6 {
@@ -1169,7 +1178,6 @@ a {
   background-color: #F6EFDB;
 }
 .services-container .card-7 {
-  margin-top: -120px;
   width: 49%;
   background-color: #F6E1DB;
 }

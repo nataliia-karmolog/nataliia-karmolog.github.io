@@ -1164,6 +1164,10 @@ a {
 
                 }
             }
+
+            .service-card-footer__info {
+                margin-bottom: -40px;
+            }
         }
 
         .service-card-img {
@@ -1220,6 +1224,16 @@ a {
         }
     }
 
+    #card-3-img {
+        &::before {
+            background-image: url('../assets/img/lila.jpg');
+            top: -250px;
+            right: -65px;
+            bottom: -50px;
+            left: 0px;
+        }
+    }
+
     .low-priority-cars-wrap {
         display: flex;
         flex-direction: row;
@@ -1264,7 +1278,6 @@ a {
 
     .card-5 {
         width: 49%;
-        height: 370px;
         background-color: #EAE4DD;
     }
 
@@ -1274,7 +1287,7 @@ a {
     }
 
     .card-7 {
-        margin-top: -120px;
+        // margin-top: -120px;
         width: 49%;
         background-color: #F6E1DB;
     }
