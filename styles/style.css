@@ -1356,6 +1356,7 @@ a {
   font-weight: normal;
 }
 .section-meditation .meditation-container .meditation-wrap {
+  display: 1px solid red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1366,6 +1367,8 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 8%;
 }
 .section-meditation .meditation-container .meditation-wrap .meditation-card {
