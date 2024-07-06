@@ -1356,7 +1356,6 @@ a {
   font-weight: normal;
 }
 .section-meditation .meditation-container .meditation-wrap {
-  display: 1px solid red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
