@@ -502,7 +502,7 @@ a {
     top: -210px;
   }
 }
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 390px) {
   .hero-img::before {
     content: "";
     top: -210px;
@@ -770,7 +770,7 @@ a {
     height: 290px;
   }
   .about-container .about-wrap .about-wrap-img::before {
-    top: -185px;
+    top: -180px;
   }
   .about-container .about-wrap .about-wrap-text {
     width: 100%;
@@ -806,7 +806,7 @@ a {
     line-height: 52.7px;
   }
 }
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 390px) {
   .about-container .about-wrap .about-wrap-img::before {
     top: -135px;
   }
@@ -1847,6 +1847,9 @@ a {
   }
 }
 @media (max-width: 470px) {
+  .how-to-consultation .how-to-consultation-wrapper {
+    padding-bottom: 50px;
+  }
   .how-to-consultation .how-to-consultation-wrapper .how-to-consultation-wrapper-container h2,
   .how-to-consultation .how-to-consultation-wrapper .how-to-consultation-wrapper-container h3 {
     text-align: center;
@@ -2039,6 +2042,10 @@ a {
   }
 }
 @media (max-width: 470px) {
+  .numerology-school {
+    padding: 0;
+    padding-top: 30px;
+  }
   .numerology-school h2 {
     font-size: 30px;
     line-height: 38px;
@@ -2055,7 +2062,7 @@ a {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    height: 930px;
+    height: 960px;
   }
   .numerology-school .numerology-school-wrapper .numerology-school-text {
     display: -webkit-box;

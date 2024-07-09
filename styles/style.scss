@@ -513,7 +513,7 @@ a {
     }
 
 
-    @media screen and (max-width: 376px) {
+    @media screen and (max-width: 390px) {
         &::before {
             content: "";
             top: -210px;
@@ -822,7 +822,7 @@ a {
                 height: 290px;
 
                 &::before {
-                    top: -185px;
+                    top: -180px;
                 }
             }
 
@@ -871,7 +871,7 @@ a {
         }
     }
 
-    @media screen and (max-width: 376px) {
+    @media screen and (max-width: 390px) {
         .about-wrap {
             .about-wrap-img {
                 &::before {
@@ -2038,6 +2038,8 @@ a {
 
     @media (max-width: 470px) {
         .how-to-consultation-wrapper {
+            padding-bottom: 50px;
+
             .how-to-consultation-wrapper-container {
 
                 h2,
@@ -2088,6 +2090,7 @@ a {
     align-items: center;
     background-color: #F9F9F9;
     padding: 75px 0;
+
 
     h2 {
         font-weight: normal;
@@ -2225,8 +2228,10 @@ a {
     }
 
     @media (max-width: 470px) {
-        h2 {
+        padding: 0;
+        padding-top: 30px;
 
+        h2 {
             font-size: 30px;
             line-height: 38px;
             text-align: center;
@@ -2236,7 +2241,8 @@ a {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            height: 930px;
+            height: 960px;
+
 
             .numerology-school-text {
                 display: flex;
@@ -2519,6 +2525,7 @@ a {
 
     @media(max-width: 470px) {
         .container {
+
             .study-program-img {
                 display: none;
             }
