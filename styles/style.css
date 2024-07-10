@@ -489,6 +489,16 @@ a {
     width: 100%;
     height: 100%;
   }
+  .hero-img::before {
+    content: "";
+    top: -380px;
+  }
+}
+@media (max-width: 600px) {
+  .hero-img::before {
+    content: "";
+    top: -320px;
+  }
 }
 @media screen and (max-width: 470px) {
   .hero-img::before {
@@ -505,7 +515,7 @@ a {
 @media screen and (max-width: 390px) {
   .hero-img::before {
     content: "";
-    top: -210px;
+    top: -160px;
   }
 }
 
@@ -688,7 +698,7 @@ a {
   .about-container .about-wrap .about-wrap-text {
     width: 57%;
     padding-left: 7%;
-    padding-top: 65px;
+    padding-top: 35px;
     padding-right: 6%;
   }
   .about-container .about-wrap .about-wrap-text h3 {
@@ -716,41 +726,7 @@ a {
     line-height: 52.7px;
   }
 }
-@media (max-width: 768px) {
-  .about-container h2 {
-    margin-bottom: 20px;
-  }
-  .about-container .about-wrap .about-wrap-img {
-    height: 500px;
-  }
-  .about-container .about-wrap .about-wrap-text {
-    padding-top: 10px;
-    padding-left: 5%;
-    padding-right: 5%;
-  }
-  .about-container .about-wrap .about-wrap-text h3 {
-    font-size: 18px;
-  }
-  .about-container .about-wrap .about-wrap-text p {
-    margin-bottom: 30px;
-  }
-  .about-container .numbers-wrap .numbers-wrap-circle {
-    width: 250px;
-    height: 250px;
-    font-size: 14px;
-    line-height: 21px;
-    margin: 0 -15px;
-  }
-  .about-container .numbers-wrap .numbers-wrap-circle .circle-text {
-    width: 70%;
-    text-align: center;
-  }
-  .about-container .numbers-wrap .numbers-wrap-circle span {
-    font-size: 52px;
-    line-height: 52.7px;
-  }
-}
-@media (max-width: 470px) {
+@media (max-width: 800px) {
   .about-container {
     padding: 0 30px;
   }
@@ -770,7 +746,7 @@ a {
     height: 290px;
   }
   .about-container .about-wrap .about-wrap-img::before {
-    top: -180px;
+    top: -380px;
   }
   .about-container .about-wrap .about-wrap-text {
     width: 100%;
@@ -806,9 +782,36 @@ a {
     line-height: 52.7px;
   }
 }
+@media (max-width: 700px) {
+  .about-container .about-wrap .about-wrap-img::before {
+    top: -320px;
+  }
+}
+@media (max-width: 600px) {
+  .about-container .about-wrap .about-wrap-img::before {
+    top: -220px;
+  }
+}
+@media (max-width: 470px) {
+  .about-container .about-wrap .about-wrap-img::before {
+    top: -145px;
+  }
+}
 @media screen and (max-width: 390px) {
   .about-container .about-wrap .about-wrap-img::before {
     top: -135px;
+  }
+  .about-container .about-wrap .about-wrap-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -896,6 +899,7 @@ a {
   .method-container .method-wrap .method-wrap-img::before {
     content: "";
     top: -220px;
+    left: 0px;
   }
   .method-container .method-wrap .method-wrap-text h3 {
     font-size: 44px;
@@ -911,28 +915,7 @@ a {
     padding-right: 3%;
   }
 }
-@media (max-width: 768px) {
-  .method-container .method-wrap .method-wrap-img {
-    height: 505px;
-  }
-  .method-container .method-wrap .method-wrap-text {
-    padding-right: 0;
-  }
-  .method-container .method-wrap .method-wrap-text h3 {
-    font-size: 33px;
-    line-height: 37px;
-    margin-bottom: 15px;
-    margin-top: 15px;
-    letter-spacing: 0rem;
-  }
-  .method-container .method-wrap .method-wrap-text p {
-    font-size: 13px;
-    line-height: 20.6px;
-    margin: 0;
-    padding-right: 3%;
-  }
-}
-@media (max-width: 470px) {
+@media (max-width: 800px) {
   .method-container .method-wrap {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1220,40 +1203,7 @@ a {
     letter-spacing: 2px;
   }
 }
-@media (max-width: 768px) {
-  .services-container h2 {
-    font-size: 34px;
-    line-height: 37.5px;
-    margin-top: 0px;
-    margin-bottom: 40px;
-  }
-  .services-container .service-card {
-    padding: 30px 40px;
-  }
-  .services-container .service-card h4 {
-    font-size: 17px;
-    line-height: 24px;
-    margin-bottom: 18px;
-  }
-  .services-container .service-card ul,
-  .services-container .service-card li {
-    font-size: 14px;
-  }
-  .services-container .service-card .service-card-footer {
-    margin-top: 25px;
-  }
-  .services-container .service-card .service-card-footer .service-card-price {
-    font-size: 28px;
-  }
-  .services-container .service-card .service-card-footer .service-card-price span {
-    font-size: 15px;
-  }
-  .services-container .service-card .service-card-footer .service-card-order {
-    font-size: 15px;
-    letter-spacing: 2px;
-  }
-}
-@media (max-width: 470px) {
+@media (max-width: 1000px) {
   .services-container h2 {
     font-size: 35px;
     line-height: 37.5px;
@@ -1491,6 +1441,48 @@ a {
             transform: translateY(-2000px);
   }
 }
+@media (max-width: 1000px) {
+  .section-meditation .meditation-container .meditation-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 8%;
+  }
+  .section-meditation .meditation-container .meditation-wrap .meditation-card {
+    width: 40%;
+    height: 150px;
+  }
+  .section-meditation .meditation-container .meditation-wrap .meditation-card h4 {
+    font-size: 18px;
+    letter-spacing: 1px;
+  }
+  .section-meditation .meditation-container .meditation-wrap .meditation-card .meditation-card-order {
+    left: 36%;
+    bottom: 18%;
+    font-size: 15px;
+  }
+}
+@media (max-width: 800px) {
+  .section-meditation .meditation-container .meditation-wrap .meditation-card {
+    padding: 25px 15px;
+  }
+  .section-meditation .meditation-container .meditation-wrap .meditation-card h4 {
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+  .section-meditation .meditation-container .meditation-wrap .meditation-card .meditation-card-order {
+    left: 36%;
+    bottom: 18%;
+    font-size: 13px;
+  }
+}
 @media (max-width: 470px) {
   .section-meditation .meditation-container h2 {
     margin-top: 80px;
@@ -1519,6 +1511,30 @@ a {
   }
   .section-meditation .meditation-container .meditation-wrap .meditation-card .meditation-card-order {
     left: 36%;
+    bottom: 18%;
+    font-size: 15px;
+  }
+}
+@media (max-width: 390px) {
+  .section-meditation .meditation-container .meditation-wrap .meditation-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .section-meditation .meditation-container .meditation-wrap .meditation-card h4 {
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+  .section-meditation .meditation-container .meditation-wrap .meditation-card .meditation-card-order {
+    font-weight: bold;
+    left: 33%;
     bottom: 18%;
     font-size: 15px;
   }
@@ -1811,10 +1827,12 @@ a {
     margin-bottom: 70px;
     font-size: 35px;
     line-height: 37.5px;
+    text-align: center;
   }
   .how-to-consultation .how-to-consultation-wrapper .how-to-consultation-wrapper-container h3 {
     font-size: 35px;
     font-weight: normal;
+    text-align: center;
   }
   .how-to-consultation .how-to-consultation-wrapper .how-to-consultation-wrapper-container p {
     width: 60%;
@@ -1888,6 +1906,9 @@ a {
 
 /**************SECTION SCHOOL*****************/
 .numerology-school {
+  background-color: #F9F9F9;
+}
+.numerology-school .numerology-school-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1904,13 +1925,13 @@ a {
   background-color: #F9F9F9;
   padding: 75px 0;
 }
-.numerology-school h2 {
+.numerology-school .numerology-school-container h2 {
   font-weight: normal;
   font-size: 51px;
   line-height: 78px;
   text-align: center;
 }
-.numerology-school .numerology-school-wrapper {
+.numerology-school .numerology-school-container .numerology-school-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1922,7 +1943,7 @@ a {
   overflow: hidden;
   background: white;
 }
-.numerology-school .numerology-school-wrapper .numerology-school-text {
+.numerology-school .numerology-school-container .numerology-school-wrapper .numerology-school-text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1939,7 +1960,7 @@ a {
   width: 57%;
   padding: 50px 40px;
 }
-.numerology-school .numerology-school-wrapper .numerology-school-text button {
+.numerology-school .numerology-school-container .numerology-school-wrapper .numerology-school-text button {
   width: 275px;
   height: 60px;
   border-radius: 35px;
@@ -1949,16 +1970,16 @@ a {
   background-color: #B49378;
   margin-top: 30px;
 }
-.numerology-school .numerology-school-wrapper .numerology-school-text button:hover {
+.numerology-school .numerology-school-container .numerology-school-wrapper .numerology-school-text button:hover {
   cursor: pointer;
   background-color: rgba(180, 147, 120, 0.5411764706);
 }
-.numerology-school .numerology-school-wrapper .numerology-school-wrap-img {
+.numerology-school .numerology-school-container .numerology-school-wrapper .numerology-school-wrap-img {
   width: 43%;
-  height: 500px;
+  height: 555px;
   position: relative;
 }
-.numerology-school .numerology-school-wrapper .numerology-school-wrap-img::before {
+.numerology-school .numerology-school-container .numerology-school-wrapper .numerology-school-wrap-img::before {
   content: "";
   background-image: url("../assets/img/9.webp");
   background-size: cover;
@@ -1970,7 +1991,7 @@ a {
   overflow: hidden;
   z-index: 0;
 }
-.numerology-school .about-course {
+.numerology-school .numerology-school-container .about-course {
   margin-top: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1985,7 +2006,7 @@ a {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.numerology-school .about-course .service-card {
+.numerology-school .numerology-school-container .about-course .service-card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2001,57 +2022,107 @@ a {
   padding: 25px 45px 35px;
   border-radius: 45px;
 }
-.numerology-school .about-course .service-card .service-card-text {
+.numerology-school .numerology-school-container .about-course .service-card .service-card-text {
   width: 100%;
   font-size: 17px;
 }
-.numerology-school .about-course .service-card .service-card-text h4 {
+.numerology-school .numerology-school-container .about-course .service-card .service-card-text h4 {
   font-size: 26px;
   text-transform: uppercase;
   margin-left: 42px;
 }
-.numerology-school .about-course .card-8 {
+.numerology-school .numerology-school-container .about-course .card-8 {
   background: #EAE4DD;
 }
-.numerology-school .about-course .card-9 {
+.numerology-school .numerology-school-container .about-course .card-9 {
   background: #E2E2E2;
 }
-.numerology-school .about-course .card-10 {
+.numerology-school .numerology-school-container .about-course .card-10 {
   background: #E9DBCE;
 }
-.numerology-school .about-course .card-11 {
+.numerology-school .numerology-school-container .about-course .card-11 {
   background: #F6EFDB;
 }
-.numerology-school .about-course .card-12 {
+.numerology-school .numerology-school-container .about-course .card-12 {
   background: #EAE4DD;
 }
-.numerology-school .about-course .card-13 {
+.numerology-school .numerology-school-container .about-course .card-13 {
   background: #F6E1DB;
 }
 @media (max-width: 1366px) {
-  .numerology-school {
+  .numerology-school .numerology-school-container {
     padding: 0 6%;
     padding-top: 100px;
   }
-  .numerology-school h2 {
+  .numerology-school .numerology-school-container h2 {
     font-size: 35px;
     line-height: 37.5px;
   }
-  .numerology-school .numerology-school-wrapper .numerology-school-wrap-img::before {
+  .numerology-school .numerology-school-container .numerology-school-wrapper .numerology-school-text {
+    font-size: 13px;
+  }
+  .numerology-school .numerology-school-container .numerology-school-wrapper .numerology-school-wrap-img::before {
     top: -180px;
   }
-}
-@media (max-width: 470px) {
-  .numerology-school {
-    padding: 0;
-    padding-top: 30px;
+  .numerology-school .numerology-school-container .about-course {
+    margin-top: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 5px;
+    width: 100%;
   }
-  .numerology-school h2 {
+  .numerology-school .numerology-school-container .about-course .service-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    margin-bottom: 2%;
+    padding: 20px 20px 30px;
+    border-radius: 45px;
+  }
+  .numerology-school .numerology-school-container .about-course .service-card .service-card-text {
+    width: 100%;
+    font-size: 15px;
+  }
+  .numerology-school .numerology-school-container .about-course .service-card .service-card-text h4 {
+    font-size: 19px;
+    text-transform: uppercase;
+    margin-left: 42px;
+  }
+}
+@media (max-width: 768px) {
+  .numerology-school .numerology-school-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0;
+    width: 100%;
+  }
+  .numerology-school .numerology-school-container h2 {
     font-size: 30px;
     line-height: 38px;
     text-align: center;
   }
-  .numerology-school .numerology-school-wrapper {
+  .numerology-school .numerology-school-container .numerology-school-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2064,7 +2135,7 @@ a {
             justify-content: space-between;
     height: 960px;
   }
-  .numerology-school .numerology-school-wrapper .numerology-school-text {
+  .numerology-school .numerology-school-container .numerology-school-wrapper .numerology-school-text {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2081,20 +2152,21 @@ a {
     width: 100%;
     height: 60%;
     padding: 40px 30px;
-  }
-  .numerology-school .numerology-school-wrapper .numerology-school-text p {
     font-size: 15px;
   }
-  .numerology-school .numerology-school-wrapper .numerology-school-wrap-img {
+  .numerology-school .numerology-school-container .numerology-school-wrapper .numerology-school-text p {
+    font-size: 15px;
+  }
+  .numerology-school .numerology-school-container .numerology-school-wrapper .numerology-school-wrap-img {
     width: 100%;
     height: 40%;
     position: relative;
     overflow: hidden;
   }
-  .numerology-school .numerology-school-wrapper .numerology-school-wrap-img::before {
+  .numerology-school .numerology-school-container .numerology-school-wrapper .numerology-school-wrap-img::before {
     top: -200px;
   }
-  .numerology-school .about-course {
+  .numerology-school .numerology-school-container .about-course {
     margin-top: 60px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2105,7 +2177,7 @@ a {
             flex-direction: column;
     gap: 5px;
   }
-  .numerology-school .about-course .service-card {
+  .numerology-school .numerology-school-container .about-course .service-card {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2121,35 +2193,42 @@ a {
     padding: 20px 20px 30px;
     border-radius: 45px;
   }
-  .numerology-school .about-course .service-card .service-card-text {
+  .numerology-school .numerology-school-container .about-course .service-card .service-card-text {
     width: 100%;
     font-size: 15px;
   }
-  .numerology-school .about-course .service-card .service-card-text h4 {
+  .numerology-school .numerology-school-container .about-course .service-card .service-card-text h4 {
     font-size: 19px;
     text-transform: uppercase;
     margin-left: 42px;
   }
 }
 @media (max-width: 414px) {
-  .numerology-school .numerology-school-wrapper .numerology-school-text {
+  .numerology-school .numerology-school-container .numerology-school-wrapper .numerology-school-text {
     height: 65%;
   }
-  .numerology-school .numerology-school-wrapper .numerology-school-wrap-img {
+  .numerology-school .numerology-school-container .numerology-school-wrapper .numerology-school-wrap-img {
     height: 35%;
   }
-  .numerology-school .numerology-school-wrapper .numerology-school-wrap-img::before {
+  .numerology-school .numerology-school-container .numerology-school-wrapper .numerology-school-wrap-img::before {
     top: -170px;
   }
 }
-@media (max-width: 376px) {
-  .numerology-school .numerology-school-wrapper .numerology-school-text {
+@media (max-width: 390px) {
+  .numerology-school .numerology-school-container {
+    overflow-x: hidden;
+    padding: 0;
+  }
+  .numerology-school .numerology-school-container h2 {
+    font-size: 25px;
+  }
+  .numerology-school .numerology-school-container .numerology-school-wrapper .numerology-school-text {
     height: 65%;
   }
-  .numerology-school .numerology-school-wrapper .numerology-school-wrap-img {
+  .numerology-school .numerology-school-container .numerology-school-wrapper .numerology-school-wrap-img {
     height: 35%;
   }
-  .numerology-school .numerology-school-wrapper .numerology-school-wrap-img::before {
+  .numerology-school .numerology-school-container .numerology-school-wrapper .numerology-school-wrap-img::before {
     top: -180px;
   }
 }
@@ -2308,13 +2387,23 @@ a {
 }
 @media (max-width: 1366px) {
   .study-program {
-    padding: 0 6%;
+    padding: 0%;
+    width: 100%;
   }
   .study-program .container .study-program-img {
     min-height: 500px;
   }
   .study-program .container .study-program-img::before {
     top: -190px;
+  }
+}
+@media (max-width: 1000px) {
+  .study-program .container .study-program-img {
+    min-height: 500px;
+  }
+  .study-program .container .study-program-img::before {
+    top: -190px;
+    left: -100px;
   }
 }
 @media (max-width: 470px) {
@@ -2339,6 +2428,7 @@ a {
 .reviews {
   margin-top: 40px;
   padding: 0 6%;
+  width: 100%;
 }
 .reviews .container-reviews {
   display: -webkit-box;
@@ -2569,9 +2659,9 @@ a {
   .reviews {
     padding: 0 6%;
   }
-  .reviews h2 {
+  .reviews .container h2 {
     font-size: 35px;
-    line-height: 37.5px;
+    text-align: center;
   }
 }
 @media (max-width: 470px) {

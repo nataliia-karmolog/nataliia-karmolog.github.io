@@ -491,9 +491,23 @@ a {
         }
     }
 
+
     @media (max-width: 768px) {
         width: 100%;
         height: 100%;
+
+        &::before {
+            content: "";
+            top: -380px;
+        }
+    }
+
+    @media (max-width: 600px) {
+        &::before {
+            content: "";
+            top: -320px;
+
+        }
     }
 
     @media screen and (max-width: 470px) {
@@ -516,7 +530,7 @@ a {
     @media screen and (max-width: 390px) {
         &::before {
             content: "";
-            top: -210px;
+            top: -160px;
 
         }
     }
@@ -718,7 +732,7 @@ a {
             .about-wrap-text {
                 width: 57%;
                 padding-left: 7%;
-                padding-top: 65px;
+                padding-top: 35px;
                 padding-right: 6%;
 
                 h3 {
@@ -756,56 +770,56 @@ a {
 
     }
 
-    @media (max-width: 768px) {
-        h2 {
-            margin-bottom: 20px;
-        }
+    // @media (max-width: 768px) {
+    //     h2 {
+    //         margin-bottom: 20px;
+    //     }
 
-        .about-wrap {
-            .about-wrap-img {
-                height: 500px;
+    //     .about-wrap {
+    //         .about-wrap-img {
+    //             height: 500px;
 
-            }
+    //         }
 
-            .about-wrap-text {
-                padding-top: 10px;
-                padding-left: 5%;
-                padding-right: 5%;
+    //         .about-wrap-text {
+    //             padding-top: 10px;
+    //             padding-left: 5%;
+    //             padding-right: 5%;
 
-                h3 {
-                    font-size: 18px;
-                }
+    //             h3 {
+    //                 font-size: 18px;
+    //             }
 
-                p {
-                    margin-bottom: 30px;
-                }
-            }
+    //             p {
+    //                 margin-bottom: 30px;
+    //             }
+    //         }
 
 
-        }
+    //     }
 
-        .numbers-wrap {
-            .numbers-wrap-circle {
-                width: 250px;
-                height: 250px;
-                font-size: 14px;
-                line-height: 21px;
-                margin: 0 -15px;
+    //     .numbers-wrap {
+    //         .numbers-wrap-circle {
+    //             width: 250px;
+    //             height: 250px;
+    //             font-size: 14px;
+    //             line-height: 21px;
+    //             margin: 0 -15px;
 
-                .circle-text {
-                    width: 70%;
-                    text-align: center;
-                }
+    //             .circle-text {
+    //                 width: 70%;
+    //                 text-align: center;
+    //             }
 
-                span {
-                    font-size: 52px;
-                    line-height: 52.7px;
-                }
-            }
-        }
-    }
+    //             span {
+    //                 font-size: 52px;
+    //                 line-height: 52.7px;
+    //             }
+    //         }
+    //     }
+    // }
 
-    @media (max-width: 470px) {
+    @media (max-width: 800px) {
         padding: 0 30px;
 
         h2 {
@@ -822,7 +836,7 @@ a {
                 height: 290px;
 
                 &::before {
-                    top: -180px;
+                    top: -380px;
                 }
             }
 
@@ -871,12 +885,51 @@ a {
         }
     }
 
+    @media (max-width: 700px) {
+
+        .about-wrap {
+            .about-wrap-img {
+                &::before {
+                    top: -320px;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 600px) {
+
+        .about-wrap {
+            .about-wrap-img {
+                &::before {
+                    top: -220px;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 470px) {
+
+        .about-wrap {
+            .about-wrap-img {
+                &::before {
+                    top: -145px;
+                }
+            }
+        }
+    }
+
     @media screen and (max-width: 390px) {
         .about-wrap {
             .about-wrap-img {
                 &::before {
                     top: -135px;
                 }
+            }
+
+            .about-wrap-text {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
             }
         }
     }
@@ -972,6 +1025,7 @@ a {
                 &::before {
                     content: "";
                     top: -220px;
+                    left: 0px;
                 }
             }
 
@@ -999,35 +1053,35 @@ a {
 
     }
 
-    @media (max-width: 768px) {
-        .method-wrap {
-            .method-wrap-img {
-                height: 505px;
-            }
+    // @media (max-width: 768px) {
+    //     .method-wrap {
+    //         .method-wrap-img {
+    //             height: 505px;
+    //         }
 
-            .method-wrap-text {
-                padding-right: 0;
+    //         .method-wrap-text {
+    //             padding-right: 0;
 
-                h3 {
-                    font-size: 33px;
-                    line-height: 37px;
-                    margin-bottom: 15px;
-                    margin-top: 15px;
-                    letter-spacing: 0rem;
-                }
+    //             h3 {
+    //                 font-size: 33px;
+    //                 line-height: 37px;
+    //                 margin-bottom: 15px;
+    //                 margin-top: 15px;
+    //                 letter-spacing: 0rem;
+    //             }
 
-                p {
-                    font-size: 13px;
-                    line-height: 20.6px;
-                    margin: 0;
-                    padding-right: 3%;
+    //             p {
+    //                 font-size: 13px;
+    //                 line-height: 20.6px;
+    //                 margin: 0;
+    //                 padding-right: 3%;
 
-                }
-            }
-        }
-    }
+    //             }
+    //         }
+    //     }
+    // }
 
-    @media (max-width: 470px) {
+    @media (max-width: 800px) {
         .method-wrap {
             flex-direction: column;
             justify-content: space-between;
@@ -1339,48 +1393,48 @@ a {
         }
     }
 
-    @media (max-width: 768px) {
-        h2 {
-            font-size: 34px;
-            line-height: 37.5px;
-            margin-top: 0px;
-            margin-bottom: 40px;
-        }
+    // @media (max-width: 768px) {
+    //     h2 {
+    //         font-size: 34px;
+    //         line-height: 37.5px;
+    //         margin-top: 0px;
+    //         margin-bottom: 40px;
+    //     }
 
-        .service-card {
-            padding: 30px 40px;
+    //     .service-card {
+    //         padding: 30px 40px;
 
-            h4 {
-                font-size: 17px;
-                line-height: 24px;
-                margin-bottom: 18px;
-            }
+    //         h4 {
+    //             font-size: 17px;
+    //             line-height: 24px;
+    //             margin-bottom: 18px;
+    //         }
 
-            ul,
-            li {
-                font-size: 14px;
-            }
+    //         ul,
+    //         li {
+    //             font-size: 14px;
+    //         }
 
-            .service-card-footer {
-                margin-top: 25px;
+    //         .service-card-footer {
+    //             margin-top: 25px;
 
-                .service-card-price {
-                    font-size: 28px;
+    //             .service-card-price {
+    //                 font-size: 28px;
 
-                    span {
-                        font-size: 15px;
-                    }
-                }
+    //                 span {
+    //                     font-size: 15px;
+    //                 }
+    //             }
 
-                .service-card-order {
-                    font-size: 15px;
-                    letter-spacing: 2px;
-                }
-            }
-        }
-    }
+    //             .service-card-order {
+    //                 font-size: 15px;
+    //                 letter-spacing: 2px;
+    //             }
+    //         }
+    //     }
+    // }
 
-    @media (max-width: 470px) {
+    @media (max-width: 1000px) {
         h2 {
             font-size: 35px;
             line-height: 37.5px;
@@ -1672,6 +1726,55 @@ a {
 
         }
 
+
+        @media (max-width: 1000px) {
+
+            .meditation-wrap {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                gap: 8%;
+
+                .meditation-card {
+                    width: 40%;
+                    height: 150px;
+
+                    h4 {
+                        font-size: 18px;
+                        letter-spacing: 1px;
+                    }
+
+                    .meditation-card-order {
+                        left: 36%;
+                        bottom: 18%;
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+
+        @media (max-width: 800px) {
+
+            .meditation-wrap {
+                .meditation-card {
+                    padding: 25px 15px;
+
+                    h4 {
+                        font-size: 14px;
+                        letter-spacing: 1px;
+                    }
+
+                    .meditation-card-order {
+                        left: 36%;
+                        bottom: 18%;
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+
+
+
         @media (max-width: 470px) {
 
             h2 {
@@ -1696,6 +1799,31 @@ a {
 
                     .meditation-card-order {
                         left: 36%;
+                        bottom: 18%;
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+
+        @media (max-width: 390px) {
+
+            .meditation-wrap {
+
+                .meditation-card {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    h4 {
+                        font-size: 14px;
+
+                        letter-spacing: 1px;
+                    }
+
+                    .meditation-card-order {
+                        font-weight: bold;
+                        left: 33%;
                         bottom: 18%;
                         font-size: 15px;
                     }
@@ -1912,6 +2040,8 @@ a {
             }
         }
     }
+
+
 }
 
 
@@ -1999,11 +2129,13 @@ a {
                     margin-bottom: 70px;
                     font-size: 35px;
                     line-height: 37.5px;
+                    text-align: center;
                 }
 
                 h3 {
                     font-size: 35px;
                     font-weight: normal;
+                    text-align: center;
                 }
 
                 p {
@@ -2084,188 +2216,74 @@ a {
 
 /**************SECTION SCHOOL*****************/
 .numerology-school {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     background-color: #F9F9F9;
-    padding: 75px 0;
 
-
-    h2 {
-        font-weight: normal;
-        font-size: 51px;
-        line-height: 78px;
-        text-align: center;
-    }
-
-    .numerology-school-wrapper {
+    .numerology-school-container {
         display: flex;
-        flex-direction: row;
-        border-radius: 45px;
-        overflow: hidden;
-        background: white;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #F9F9F9;
+        padding: 75px 0;
 
-        .numerology-school-text {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            width: 57%;
-            padding: 50px 40px;
-
-            button {
-                width: 275px;
-                height: 60px;
-                border-radius: 35px;
-                font-size: 18px;
-                color: white;
-                border: none;
-                background-color: #B49378;
-                margin-top: 30px;
-
-                &:hover {
-                    cursor: pointer;
-                    background-color: #b493788a;
-                }
-            }
-
-        }
-
-        .numerology-school-wrap-img {
-            width: 43%;
-            height: 500px;
-            position: relative;
-
-            &::before {
-                content: "";
-                background-image: url('../assets/img/9.webp');
-                background-size: cover;
-                position: absolute;
-                top: -300px;
-                right: -50px;
-                bottom: 0px;
-                left: 0px;
-                overflow: hidden;
-                z-index: 0;
-            }
-        }
-
-    }
-
-    .about-course {
-        margin-top: 60px;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-
-        .service-card {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            width: 49%;
-            margin-bottom: 2%;
-            padding: 25px 45px 35px;
-            border-radius: 45px;
-
-            .service-card-text {
-                h4 {
-                    font-size: 26px;
-                    text-transform: uppercase;
-                    margin-left: 42px;
-                }
-
-                width: 100%;
-                font-size: 17px;
-            }
-        }
-
-        .card-8 {
-            background: #EAE4DD;
-        }
-
-        .card-9 {
-            background: #E2E2E2;
-        }
-
-        .card-10 {
-            background: #E9DBCE;
-        }
-
-        .card-11 {
-            background: #F6EFDB;
-        }
-
-        .card-12 {
-            background: #EAE4DD;
-        }
-
-        .card-13 {
-            background: #F6E1DB;
-        }
-    }
-
-    @media(max-width: 1366px) {
-        padding: 0 6%;
-        padding-top: 100px;
 
         h2 {
-            font-size: 35px;
-            line-height: 37.5px;
-        }
-
-        .numerology-school-wrapper {
-
-            .numerology-school-wrap-img {
-                &::before {
-                    top: -180px;
-                }
-            }
-
-        }
-
-    }
-
-    @media (max-width: 470px) {
-        padding: 0;
-        padding-top: 30px;
-
-        h2 {
-            font-size: 30px;
-            line-height: 38px;
+            font-weight: normal;
+            font-size: 51px;
+            line-height: 78px;
             text-align: center;
         }
 
         .numerology-school-wrapper {
             display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            height: 960px;
-
+            flex-direction: row;
+            border-radius: 45px;
+            overflow: hidden;
+            background: white;
 
             .numerology-school-text {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
-                width: 100%;
-                height: 60%;
-                padding: 40px 30px;
+                width: 57%;
+                padding: 50px 40px;
 
-                p {
-                    font-size: 15px;
+
+                button {
+                    width: 275px;
+                    height: 60px;
+                    border-radius: 35px;
+                    font-size: 18px;
+                    color: white;
+                    border: none;
+                    background-color: #B49378;
+                    margin-top: 30px;
+
+                    &:hover {
+                        cursor: pointer;
+                        background-color: #b493788a;
+                    }
                 }
+
             }
 
             .numerology-school-wrap-img {
-                width: 100%;
-                height: 40%;
+                width: 43%;
+                height: 555px;
                 position: relative;
-                overflow: hidden;
 
                 &::before {
-                    top: -200px;
+                    content: "";
+                    background-image: url('../assets/img/9.webp');
+                    background-size: cover;
+                    position: absolute;
+                    top: -300px;
+                    right: -50px;
+                    bottom: 0px;
+                    left: 0px;
+                    overflow: hidden;
+                    z-index: 0;
                 }
             }
 
@@ -2274,68 +2292,232 @@ a {
         .about-course {
             margin-top: 60px;
             display: flex;
-            flex-direction: column;
-            gap: 5px;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
 
             .service-card {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-                width: 100%;
+                width: 49%;
                 margin-bottom: 2%;
-                padding: 20px 20px 30px;
+                padding: 25px 45px 35px;
                 border-radius: 45px;
 
                 .service-card-text {
                     h4 {
-                        font-size: 19px;
+                        font-size: 26px;
                         text-transform: uppercase;
                         margin-left: 42px;
                     }
 
                     width: 100%;
+                    font-size: 17px;
+                }
+            }
+
+            .card-8 {
+                background: #EAE4DD;
+            }
+
+            .card-9 {
+                background: #E2E2E2;
+            }
+
+            .card-10 {
+                background: #E9DBCE;
+            }
+
+            .card-11 {
+                background: #F6EFDB;
+            }
+
+            .card-12 {
+                background: #EAE4DD;
+            }
+
+            .card-13 {
+                background: #F6E1DB;
+            }
+        }
+
+        @media(max-width: 1366px) {
+            padding: 0 6%;
+            padding-top: 100px;
+
+            h2 {
+                font-size: 35px;
+                line-height: 37.5px;
+            }
+
+            .numerology-school-wrapper {
+                .numerology-school-text {
+                    font-size: 13px;
+                }
+
+                .numerology-school-wrap-img {
+                    &::before {
+                        top: -180px;
+                    }
+                }
+
+            }
+
+            .about-course {
+                margin-top: 60px;
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                width: 100%;
+
+                .service-card {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    width: 100%;
+                    margin-bottom: 2%;
+                    padding: 20px 20px 30px;
+                    border-radius: 45px;
+
+                    .service-card-text {
+                        h4 {
+                            font-size: 19px;
+                            text-transform: uppercase;
+                            margin-left: 42px;
+                        }
+
+                        width: 100%;
+                        font-size: 15px;
+                    }
+                }
+            }
+
+        }
+
+        @media (max-width: 768px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0;
+            width: 100%;
+
+            h2 {
+                font-size: 30px;
+                line-height: 38px;
+                text-align: center;
+            }
+
+            .numerology-school-wrapper {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: 960px;
+
+
+                .numerology-school-text {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                    height: 60%;
+                    padding: 40px 30px;
                     font-size: 15px;
+
+                    p {
+                        font-size: 15px;
+                    }
                 }
+
+                .numerology-school-wrap-img {
+                    width: 100%;
+                    height: 40%;
+                    position: relative;
+                    overflow: hidden;
+
+                    &::before {
+                        top: -200px;
+                    }
+                }
+
+            }
+
+            .about-course {
+                margin-top: 60px;
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+
+                .service-card {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    width: 100%;
+                    margin-bottom: 2%;
+                    padding: 20px 20px 30px;
+                    border-radius: 45px;
+
+                    .service-card-text {
+                        h4 {
+                            font-size: 19px;
+                            text-transform: uppercase;
+                            margin-left: 42px;
+                        }
+
+                        width: 100%;
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+
+        @media (max-width: 414px) {
+
+            .numerology-school-wrapper {
+                .numerology-school-text {
+                    height: 65%;
+                }
+
+                .numerology-school-wrap-img {
+                    height: 35%;
+
+                    &::before {
+                        top: -170px;
+                    }
+                }
+
+            }
+        }
+
+        @media (max-width: 390px) {
+            overflow-x: hidden;
+            padding: 0;
+
+            h2 {
+                font-size: 25px;
+            }
+
+            .numerology-school-wrapper {
+                .numerology-school-text {
+                    height: 65%;
+                }
+
+                .numerology-school-wrap-img {
+                    height: 35%;
+
+                    &::before {
+                        top: -180px;
+                    }
+                }
+
             }
         }
     }
 
-    @media (max-width: 414px) {
 
-        .numerology-school-wrapper {
-            .numerology-school-text {
-                height: 65%;
-            }
-
-            .numerology-school-wrap-img {
-                height: 35%;
-
-                &::before {
-                    top: -170px;
-                }
-            }
-
-        }
-    }
-
-    @media (max-width: 376px) {
-
-        .numerology-school-wrapper {
-            .numerology-school-text {
-                height: 65%;
-            }
-
-            .numerology-school-wrap-img {
-                height: 35%;
-
-                &::before {
-                    top: -180px;
-                }
-            }
-
-        }
-    }
 }
+
 
 /*****************SCHOOL PROGRAM**************************/
 /*****accordion*****/
@@ -2509,7 +2691,8 @@ a {
     }
 
     @media(max-width: 1366px) {
-        padding: 0 6%;
+        padding: 0%;
+        width: 100%;
 
         .container {
 
@@ -2518,6 +2701,20 @@ a {
 
                 &::before {
                     top: -190px;
+                }
+            }
+        }
+    }
+
+    @media(max-width: 1000px) {
+        .container {
+
+            .study-program-img {
+                min-height: 500px;
+
+                &::before {
+                    top: -190px;
+                    left: -100px;
                 }
             }
         }
@@ -2571,6 +2768,7 @@ a {
 .reviews {
     margin-top: 40px;
     padding: 0 6%;
+    width: 100%;
 
     .container-reviews {
         display: flex;
@@ -2820,9 +3018,12 @@ a {
     @media(max-width: 1366px) {
         padding: 0 6%;
 
-        h2 {
-            font-size: 35px;
-            line-height: 37.5px;
+        .container {
+            h2 {
+                font-size: 35px;
+                // line-height: 37.5px;
+                text-align: center;
+            }
         }
     }
 
