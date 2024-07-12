@@ -547,7 +547,7 @@ a {
 }
 .about-container .about-wrap .about-wrap-img {
   width: 43%;
-  height: 835px;
+  height: 650px;
   position: relative;
 }
 .about-container .about-wrap .about-wrap-img::before {
@@ -555,7 +555,7 @@ a {
   background-image: url("../assets/img/4.webp");
   background-size: cover;
   position: absolute;
-  top: -100px;
+  top: -200px;
   right: 0px;
   bottom: 0px;
   left: 0px;
@@ -1942,6 +1942,7 @@ a {
   border-radius: 45px;
   overflow: hidden;
   background: white;
+  width: 90%;
 }
 .numerology-school .numerology-school-container .numerology-school-wrapper .numerology-school-text {
   display: -webkit-box;
@@ -1976,7 +1977,7 @@ a {
 }
 .numerology-school .numerology-school-container .numerology-school-wrapper .numerology-school-wrap-img {
   width: 43%;
-  height: 555px;
+  height: 610px;
   position: relative;
 }
 .numerology-school .numerology-school-container .numerology-school-wrapper .numerology-school-wrap-img::before {
