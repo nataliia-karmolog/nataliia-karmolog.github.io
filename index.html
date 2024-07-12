@@ -698,44 +698,6 @@
                      </div>
                </section>
 
-               <section id="reviews" class="section reviews reviews-1">
-                  <div class="container container-reviews">
-                     <h2>Відгуки від моїх клієнтів та учнів після навчання</h2>
-                     <form>
-                        <input type="radio" name="fancy" autofocus value="clubs" id="clubs" />
-                        <input type="radio" name="fancy" value="hearts" id="hearts" />
-                        <input type="radio" name="fancy" value="spades" id="spades" />
-                        <input type="radio" name="fancy" value="diamonds" id="diamonds" />
-                        <input type="radio" name="fancy" value="diamonds2" id="diamonds2" />
-                        <input type="radio" name="fancy" value="diamonds3" id="diamonds3" />
-                        <input type="radio" name="fancy" value="diamonds4" id="diamonds4" />
-                        <input type="radio" name="fancy" value="diamonds5" id="diamonds5" />
-                        <input type="radio" name="fancy" value="diamonds6" id="diamonds6" />
-
-                        <label id="Clubs" for="clubs"></label>
-                        <label for="hearts"></label>
-                        <label for="spades"></label>
-                        <label for="diamonds"></label>
-                        <label for="diamonds2"></label>
-                        <label for="diamonds3"></label>
-                        <label for="diamonds4"></label>
-                        <label for="diamonds5"></label>
-                        <label for="diamonds6"></label>
-                     </form>
-
-                     <div class="rewies_images">
-                        <div class="rewies_img" id="rewies_img-1"></div>
-                        <div class="rewies_img" id="rewies_img-2"></div>
-                        <div class="rewies_img" id="rewies_img-3"></div>
-                        <div class="rewies_img" id="rewies_img-4"></div>
-                        <div class="rewies_img" id="rewies_img-5"></div>
-                        <div class="rewies_img" id="rewies_img-6"></div>
-                        <div class="rewies_img" id="rewies_img-7"></div>
-                        <div class="rewies_img" id="rewies_img-8"></div>
-                        <div class="rewies_img" id="rewies_img-9"></div>
-                     </div>
-                  </div>
-               </section>
 
                <section id="reviews-2" class="section reviews reviews-2">
                   <div class="container container-reviews">
@@ -757,10 +719,48 @@
 
                            <div class="prev" onclick="prevSlide('slider1')">&#10094;</div>
                            <div class="next" onclick="nextSlide('slider1')">&#10095;</div>
-                           <!-- <div class="dots" id="dots-container"></div> -->
                         </div>
                      </div>
 
+                  </div>
+               </section>
+
+               <section>
+                  <div class="custom-slider">
+                     <div class="custom-slides">
+                        <div class="custom-slide">
+                           <img src="/assets/img/comments/com-1.PNG" alt="Image 1">
+                        </div>
+                        <div class="custom-slide">
+                           <img src="/assets/img/comments/com-2.PNG" alt="Image 2">
+                        </div>
+                        <div class="custom-slide">
+                           <img src="/assets/img/comments/com-3.PNG" alt="Image 3">
+                        </div>
+                        <div class="custom-slide">
+                           <img src="/assets/img/comments/com-4.PNG" alt="Image 4">
+                        </div>
+                        <div class="custom-slide">
+                           <img src="/assets/img/comments/6.PNG" alt="Image 5">
+                        </div>
+                        <div class="custom-slide">
+                           <img src="/assets/img/comments/7.PNG" alt="Image 6">
+                        </div>
+                        <div class="custom-slide">
+                           <img src="/assets/img/comments/8.PNG" alt="Image 7">
+                        </div>
+                        <div class="custom-slide">
+                           <img src="/assets/img/comments/9.PNG" alt="Image 8">
+                        </div>
+                        <div class="custom-slide">
+                           <img src="/assets/img/comments/10.PNG" alt="Image 9">
+                        </div>
+                        
+                     </div>
+                     <div class="custom-controls">
+                        <button class="custom-control custom-prev">&lt;</button>
+                        <button class="custom-control custom-next">&gt;</button>
+                     </div>
                   </div>
                </section>
    </main>
@@ -779,6 +779,21 @@
    <script src="./js/wow.min.js"></script>
    <script>
       new WOW().init();
+   </script>
+
+   <script>
+      const customSlides = document.querySelector('.custom-slides');
+      const customPrev = document.querySelector('.custom-prev');
+      const customNext = document.querySelector('.custom-next');
+      let customIndex = 0;
+
+      function showCustomSlide(i) {
+         customIndex = (i + customSlides.children.length) % customSlides.children.length;
+         customSlides.style.transform = `translateX(-${customIndex * 100}%)`;
+      }
+
+      customPrev.addEventListener('click', () => showCustomSlide(customIndex - 1));
+      customNext.addEventListener('click', () => showCustomSlide(customIndex + 1));
    </script>
 
    <script>
