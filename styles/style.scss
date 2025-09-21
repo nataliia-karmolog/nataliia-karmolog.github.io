@@ -2602,6 +2602,35 @@ a {
 
         }
 
+        // Стилі для другої секції програми навчання
+        &.study-program-2 {
+            .study-program-img-2 {
+                min-height: 600px;
+                width: 40%;
+                position: relative;
+                overflow: hidden;
+
+                &::before {
+                    content: "";
+                    background-image: url('../assets/img/8.webp');
+                    background-size: cover;
+                    position: absolute;
+                    top: -250px;
+                    right: 0px;
+                    bottom: 0px;
+                    left: -0px;
+                    z-index: 1;
+                }
+            }
+
+            .study-program-wrap-2 {
+                background-color: #DCDADB;
+                width: 60%;
+                color: white;
+                padding: 35px 35px 45px;
+            }
+        }
+
         $midnight: #DCDADB;
         $clouds: #ecf0f1;
 
@@ -2789,6 +2818,60 @@ a {
                 }
             }
 
+        }
+    }
+
+    // Медіа-запити для другої секції програми навчання
+    @media(max-width: 1000px) {
+        &.study-program-2 {
+            .container {
+                .study-program-img-2 {
+                    min-height: 500px;
+
+                    &::before {
+                        top: -190px;
+                        left: -100px;
+                    }
+                }
+            }
+        }
+    }
+
+    @media(max-width: 470px) {
+        &.study-program-2 {
+            .container {
+                .study-program-img-2 {
+                    display: none;
+                }
+
+                .study-program-wrap-2 {
+                    width: 100%;
+
+                    h2 {
+                        font-size: 23px;
+                    }
+
+                    .row {
+                        .col {
+                            .tabs {
+                                .tab {
+                                    .tab-label {
+                                        font-size: 15px;
+                                    }
+
+                                    .tab-content {
+                                        .according-ul {
+                                            li {
+                                                font-size: 15px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 
