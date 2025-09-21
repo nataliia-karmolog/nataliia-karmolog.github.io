@@ -1992,6 +1992,23 @@ a {
   overflow: hidden;
   z-index: 0;
 }
+.numerology-school .numerology-school-container .numerology-school-wrapper .numerology-school-wrap-img2 {
+  width: 43%;
+  height: 610px;
+  position: relative;
+}
+.numerology-school .numerology-school-container .numerology-school-wrapper .numerology-school-wrap-img2::before {
+  content: "";
+  background-image: url("../assets/img/10.webp");
+  background-size: cover;
+  position: absolute;
+  top: -200px;
+  right: -50px;
+  bottom: 0px;
+  left: 0px;
+  overflow: hidden;
+  z-index: 0;
+}
 .numerology-school .numerology-school-container .about-course {
   margin-top: 60px;
   display: -webkit-box;
@@ -2063,6 +2080,9 @@ a {
     font-size: 13px;
   }
   .numerology-school .numerology-school-container .numerology-school-wrapper .numerology-school-wrap-img::before {
+    top: -180px;
+  }
+  .numerology-school .numerology-school-container .numerology-school-wrapper .numerology-school-wrap-img2::before {
     top: -180px;
   }
   .numerology-school .numerology-school-container .about-course {
@@ -2167,6 +2187,15 @@ a {
   .numerology-school .numerology-school-container .numerology-school-wrapper .numerology-school-wrap-img::before {
     top: -350px;
   }
+  .numerology-school .numerology-school-container .numerology-school-wrapper .numerology-school-wrap-img2 {
+    width: 100%;
+    height: 40%;
+    position: relative;
+    overflow: hidden;
+  }
+  .numerology-school .numerology-school-container .numerology-school-wrapper .numerology-school-wrap-img2::before {
+    top: -350px;
+  }
   .numerology-school .numerology-school-container .about-course {
     margin-top: 60px;
     display: -webkit-box;
@@ -2208,6 +2237,9 @@ a {
   .numerology-school .numerology-school-container .numerology-school-wrapper .numerology-school-wrap-img::before {
     top: -260px;
   }
+  .numerology-school .numerology-school-container .numerology-school-wrapper .numerology-school-wrap-img2::before {
+    top: -260px;
+  }
 }
 @media (max-width: 470px) {
   .numerology-school .numerology-school-container .numerology-school-wrapper .numerology-school-text {
@@ -2217,6 +2249,12 @@ a {
     height: 35%;
   }
   .numerology-school .numerology-school-container .numerology-school-wrapper .numerology-school-wrap-img::before {
+    top: -170px;
+  }
+  .numerology-school .numerology-school-container .numerology-school-wrapper .numerology-school-wrap-img2 {
+    height: 35%;
+  }
+  .numerology-school .numerology-school-container .numerology-school-wrapper .numerology-school-wrap-img2::before {
     top: -170px;
   }
 }
@@ -2235,6 +2273,12 @@ a {
     height: 35%;
   }
   .numerology-school .numerology-school-container .numerology-school-wrapper .numerology-school-wrap-img::before {
+    top: -180px;
+  }
+  .numerology-school .numerology-school-container .numerology-school-wrapper .numerology-school-wrap-img2 {
+    height: 35%;
+  }
+  .numerology-school .numerology-school-container .numerology-school-wrapper .numerology-school-wrap-img2::before {
     top: -180px;
   }
 }

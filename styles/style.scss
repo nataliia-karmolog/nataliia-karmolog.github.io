@@ -2291,6 +2291,25 @@ a {
                 }
             }
 
+            .numerology-school-wrap-img2 {
+                width: 43%;
+                height: 610px;
+                position: relative;
+
+                &::before {
+                    content: "";
+                    background-image: url('../assets/img/10.webp');
+                    background-size: cover;
+                    position: absolute;
+                    top: -300px;
+                    right: -50px;
+                    bottom: 0px;
+                    left: 0px;
+                    overflow: hidden;
+                    z-index: 0;
+                }
+            }
+
         }
 
         .about-course {
