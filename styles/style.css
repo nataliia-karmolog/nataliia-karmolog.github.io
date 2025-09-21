@@ -2332,6 +2332,23 @@ a {
   left: 0px;
   z-index: 1;
 }
+.study-program .container .study-program-img11 {
+  min-height: 600px;
+  width: 40%;
+  position: relative;
+  overflow: hidden;
+}
+.study-program .container .study-program-img11::before {
+  content: "";
+  background-image: url("../assets/img/11.webp");
+  background-size: cover;
+  position: absolute;
+  top: -250px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  z-index: 1;
+}
 .study-program .container .study-program-wrap {
   background-color: #DCDADB;
   width: 60%;
@@ -2450,6 +2467,12 @@ a {
   .study-program .container .study-program-img::before {
     top: -190px;
   }
+  .study-program .container .study-program-img11 {
+    min-height: 500px;
+  }
+  .study-program .container .study-program-img11::before {
+    top: -190px;
+  }
 }
 @media (max-width: 1000px) {
   .study-program .container .study-program-img {
@@ -2459,9 +2482,19 @@ a {
     top: -190px;
     left: -100px;
   }
+  .study-program .container .study-program-img11 {
+    min-height: 500px;
+  }
+  .study-program .container .study-program-img11::before {
+    top: -190px;
+    left: -100px;
+  }
 }
 @media (max-width: 470px) {
   .study-program .container .study-program-img {
+    display: none;
+  }
+  .study-program .container .study-program-img11 {
     display: none;
   }
   .study-program .container .study-program-wrap {
