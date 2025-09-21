@@ -1104,9 +1104,9 @@ a {
 .services-container #card-3-img::before {
   background-image: url("../assets/img/lila.webp");
   top: -250px;
-  right: -65px;
+  right: -10px;
   bottom: -50px;
-  left: 0px;
+  left: -70px;
 }
 .services-container .low-priority-cars-wrap {
   display: -webkit-box;
