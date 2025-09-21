@@ -2566,6 +2566,10 @@ a {
         overflow: hidden;
         background-color: #DCDADB;
         padding: 0;
+        max-width: 100vw;
+        width: 100vw;
+        margin-left: calc(-50vw + 50%);
+        margin-right: calc(-50vw + 50%);
 
 
         h2 {
