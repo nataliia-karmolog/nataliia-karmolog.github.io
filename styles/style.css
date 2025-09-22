@@ -1104,9 +1104,9 @@ a {
 .services-container #card-3-img::before {
   background-image: url("../assets/img/lila.webp");
   top: -250px;
-  right: -10px;
+  right: -40px;
   bottom: -50px;
-  left: -70px;
+  left: -55px;
 }
 .services-container .low-priority-cars-wrap {
   display: -webkit-box;
@@ -2736,9 +2736,45 @@ a {
   background-image: url("../assets/img/comments/10.PNG");
 }
 
+#slide-10 {
+  background-image: url("../assets/img/comments/11.PNG");
+}
+
+#slide-11 {
+  background-image: url("../assets/img/comments/12.PNG");
+}
 .slider-reviews {
   margin-bottom: 25px;
 }
+#slide-12 {
+  background-image: url("../assets/img/comments/13.PNG");
+}
+#slide-13 {
+  background-image: url("../assets/img/comments/14.PNG");
+}
+#slide-14 {
+  background-image: url("../assets/img/comments/15.PNG");
+}
+#slide-15 {
+  background-image: url("../assets/img/comments/16.PNG");
+}
+#slide-16 {
+  background-image: url("../assets/img/comments/17.PNG");
+}
+#slide-17 {
+  background-image: url("../assets/img/comments/18.PNG");
+}
+#slide-18 {
+  background-image: url("../assets/img/comments/19.PNG");
+}
+#slide-19 {
+  background-image: url("../assets/img/comments/20.PNG");
+}
+#slide-20 {
+  background-image: url("../assets/img/comments/21.PNG");
+}
+
+
 
 /******************custom-slider**********************/
 .custom-slider {
