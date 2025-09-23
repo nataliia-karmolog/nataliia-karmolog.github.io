@@ -1104,9 +1104,9 @@ a {
 .services-container #card-3-img::before {
   background-image: url("../assets/img/lila.webp");
   top: -250px;
-  right: -40px;
+  right: -10px;
   bottom: -50px;
-  left: -55px;
+  left: -70px;
 }
 .services-container .low-priority-cars-wrap {
   display: -webkit-box;
@@ -2597,61 +2597,9 @@ a {
   }
 }
 /******************slider*******************/
-.slider-body {
-  width: 100%;
-  margin: 0 auto;
-}
-
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .reviews-2 {
-    display: block;
-  }
-  
-  .slider-container {
-    margin-bottom: 15px;
-  }
-  
-  .slide {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 calc(100% - 10px);
-            flex: 0 0 calc(100% - 10px);
-    height: 180px;
-    margin-right: 10px;
-  }
-  
-  .slider-wrapper {
-    padding: 0 15px 0 15px;
-  }
-}
-
-@media (min-width: 481px) and (max-width: 768px) {
-  .reviews-2 {
-    display: block;
-  }
-  
-  .slider-container {
-    margin-bottom: 15px;
-  }
-  
-  .slide {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 calc(50% - 10px);
-            flex: 0 0 calc(50% - 10px);
-    height: 200px;
-    margin-right: 10px;
-  }
-  
-  .slider-wrapper {
-    padding: 0 20px 0 20px;
-  }
-}
-
-@media (min-width: 769px) and (max-width: 1024px) {
-  .slide {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 calc(33.33% - 15px);
-            flex: 0 0 calc(33.33% - 15px);
-    height: 250px;
+    display: none;
   }
 }
 .slider-container {
@@ -2795,128 +2743,124 @@ a {
 #slide-11 {
   background-image: url("../assets/img/comments/12.PNG");
 }
+
 #slide-12 {
   background-image: url("../assets/img/comments/13.PNG");
 }
+
 #slide-13 {
   background-image: url("../assets/img/comments/14.PNG");
 }
+
 #slide-14 {
   background-image: url("../assets/img/comments/15.PNG");
 }
+
 #slide-15 {
   background-image: url("../assets/img/comments/16.PNG");
 }
+
 #slide-16 {
   background-image: url("../assets/img/comments/17.PNG");
 }
+
 #slide-17 {
   background-image: url("../assets/img/comments/18.PNG");
 }
+
 #slide-18 {
   background-image: url("../assets/img/comments/19.PNG");
 }
+
 #slide-19 {
   background-image: url("../assets/img/comments/20.PNG");
 }
+
 #slide-20 {
   background-image: url("../assets/img/comments/21.PNG");
 }
 
-
+.slider-reviews {
+  margin-bottom: 25px;
+}
 
 /******************custom-slider**********************/
 .custom-slider {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  overflow: hidden;
-  width: 100%;
-  height: 400px;
-  /* Висота слайдера */
-  position: relative;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 40px auto;
-}
-
-.custom-slides {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-transition: -webkit-transform 0.5s ease;
-  transition: -webkit-transform 0.5s ease;
-  transition: transform 0.5s ease;
-  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
-  height: 100%;
-}
-
-.custom-slide {
-  min-width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  /* Вирівнювання зображень по центру */
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.custom-slide img {
-  max-width: 100%;
-  max-height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
-  /* Зберігає пропорції зображень */
-}
-
-.custom-controls {
-  position: absolute;
-  top: 50%;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  pointer-events: none;
-  /* Забороняє події миші на контейнері */
-}
-
-.custom-control {
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-  pointer-events: auto;
-  /* Включає події миші для кнопок */
-  margin: 0 10px;
-  /* Додає відступ між кнопками і краями слайдера */
+  display: none;
 }
 
 @media (max-width: 768px) {
   .custom-slider {
-    height: 250px;
-    margin: 20px auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    height: 300px;
+    /* Висота слайдера */
+    position: relative;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    /* Вирівнювання слайдів по центру */
+    margin: 30px auto;
   }
-}
-
-@media (min-width: 1200px) {
-  .custom-slider {
-    height: 500px;
-    margin: 50px auto;
+  .custom-slides {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-transition: -webkit-transform 0.5s ease;
+    transition: -webkit-transform 0.5s ease;
+    transition: transform 0.5s ease;
+    transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+    height: 100%;
+  }
+  .custom-slide {
+    min-width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    /* Вирівнювання зображень по центру */
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .custom-slide img {
+    max-width: 100%;
+    max-height: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+    /* Зберігає пропорції зображень */
+  }
+  .custom-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    pointer-events: none;
+    /* Забороняє події миші на контейнері */
+  }
+  .custom-control {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    pointer-events: auto;
+    /* Включає події миші для кнопок */
+    margin: 0 10px;
+    /* Додає відступ між кнопками і краями слайдера */
   }
 }
 footer {
