@@ -112,3 +112,33 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 });
+
+// Ось тут ініціалізація, попередній код можно видаляти
+  document.addEventListener('DOMContentLoaded', function () {
+    new Splide('.splide', {
+      type: 'loop',
+      perPage: 3,
+      gap: '30px',
+      focus: 'left',
+      trimSpace: true,
+    breakpoints: {
+      768: {
+        perPage: 2,
+        gap: '20px',
+      },
+      480: {
+        type: 'slide',
+        perPage: 1,
+        arrows: false,
+        pagination: false,
+        // focus: 'center',
+        gap: '10px',
+        padding: { left: 0, right: 0 },
+      },
+    },
+    padding: {
+      right: '10px',
+      left: '10px',
+    },
+    }).mount();
+  });
